@@ -1,0 +1,13 @@
+.container { 
+    height: 75px;
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--semibold);
+    font-size: 20px;
+    letter-spacing: -0.8px;
+}

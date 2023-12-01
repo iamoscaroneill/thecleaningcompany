@@ -1,4 +1,3 @@
-import React from 'react'
 import nav from './Navigation.module.css'
 
 const Navigation = () => {

@@ -2,3 +2,13 @@
   font-family: 'DM Sans SemiBold';
   src: url('./assets/fonts/DMSans-SemiBold.ttf');
 }
+
+@font-face {
+  font-family: 'DM Sans Bold';
+  src: url('./assets/fonts/DMSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'DM Sans XBold';
+  src: url('./assets/fonts/DMSans-ExtraBold.ttf');
+}

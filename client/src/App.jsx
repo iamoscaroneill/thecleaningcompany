@@ -1,12 +1,19 @@
-import { useState } from 'react'
-import Navigation from './Components/Navigation/Navigation'
 import './App.css'
+import Navigation from './Components/Navigation/Navigation'
+import Introduction from './Components/Introduction/Introduction'
+import Areas from './Components/Areas/Areas'
+import Stuff from './Components/Stuff/Stuff'
+import Footer from './Components/Footer/Footer'
 
-function App() {
-
+const App = () => {
   return (
-    <div>
+    <div className='app'>
       <Navigation/>
+      <Introduction/>
+      <Areas/>
+      <Stuff/>
+
+      <Footer/>
     </div>
   )
 }

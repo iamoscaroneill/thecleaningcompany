@@ -1,5 +1,9 @@
 :root {
-  --semibold: 'DM Sans SemiBold'
+  --DMSemiBold: 'DM Sans SemiBold';
+  --DMXBold: 'DM Sans XBold';
+  --DMBold: 'DM Sans Bold';
+  --BrightPurple: #4a2ff7;
+  --Mint: #7fffd4;
 }
 
 * {
@@ -20,4 +24,14 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background: #060606;
+  font-family: var(--DMSemiBold);
+  letter-spacing: -0.8px;
+}
+
+a {
+  color: inherit;
 }

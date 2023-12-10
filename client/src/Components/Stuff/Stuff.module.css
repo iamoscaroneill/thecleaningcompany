@@ -1,0 +1,54 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-top: 2px solid #000000;
+    padding: 0px 20px;
+}
+
+.title {
+    font-family: var(--DMXBold);
+    letter-spacing: -1.8px;
+    color: #000000;
+}
+
+.serviceTypes {
+    margin: 20px;
+}
+
+.serviceTypes h2 {
+    font-family: var(--DMXBold);
+    letter-spacing: -1.3px;
+}
+
+.serviceOptions {
+    margin-top: 5px;
+}
+
+.serviceContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.disclaimer {
+    width: 75%;
+}
+
+@media screen and (max-width: 940px) {
+    .container {
+        height: auto;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .serviceContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -1,6 +1,6 @@
-import brooklyn from '../assets/images/brooklyn.png'
-import queens from '../assets/images/queens.png'
-import manhattan from '../assets/images/manhattan.png'
+import brooklyn from '../assets/images/bk.png'
+import queens from '../assets/images/qns.png'
+import manhattan from '../assets/images/mtn.png'
 import purple from '../assets/images/cleaningcompany-1.png'
 import mint from '../assets/images/cleaningcompany.png'
 

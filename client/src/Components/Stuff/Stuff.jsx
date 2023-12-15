@@ -13,7 +13,7 @@ const Title = () => {
 const Services = (props) => {
     return (
         <div className={stuff.serviceTypes}>
-            <h2>{props.type}</h2>
+            <h3>{props.type}</h3>
             <div className={stuff.serviceOptions}>
                 {props.options && props.options.map((options, i) => {
                     return (

@@ -57,7 +57,12 @@
 } 
 
 .disclaimer {
-    width: 75%;
+    width: 85%;
+    padding: 10px;
+    background-color: #d4d4ff;
+    border: 1px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
 }
 
 @media screen and (max-width: 710px) {

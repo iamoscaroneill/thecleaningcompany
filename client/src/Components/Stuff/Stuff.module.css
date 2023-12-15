@@ -18,9 +18,15 @@
 
 .serviceTypes {
     margin: 20px;
+    background-color: #d4d4ff;
+    padding: 10px;
+    min-width: 250px;
+    border: 1px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
 }
 
-.serviceTypes h2 {
+.serviceTypes h3 {
     font-family: var(--DMXBold);
     letter-spacing: -1.3px;
 }
@@ -34,10 +40,16 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .disclaimer {
-    width: 75%;
+    width: 85%;
+    background-color: #99fada;
+    border: 1px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 10px;
 }
 
 @media screen and (max-width: 940px) {

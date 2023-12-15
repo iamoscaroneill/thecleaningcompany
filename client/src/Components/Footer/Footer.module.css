@@ -68,6 +68,12 @@ h4 i {
     margin-left: 5px;
 }
 
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    font-size: 14px;
+}
+
 @media screen and (max-width: 900px) {
     .container {
         align-items: center;
@@ -81,6 +87,7 @@ h4 i {
     .booking {
         position: relative;
         right: inherit;
+        margin-bottom: 10px;
     }
 }
 

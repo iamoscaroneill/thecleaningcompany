@@ -36,6 +36,12 @@ const Booking = () => {
     )
 }
 
+const Copyright = () => {
+    return (
+        <div className={footer.copyright}>Copyright © 2023 The Cleaning Company of New York, LLC</div>
+    )
+}
+
 const Footer = () => {
   return (
     <div className={footer.container}>
@@ -45,6 +51,8 @@ const Footer = () => {
             <Phone/>
             <Booking/>
         </div>
+
+        <Copyright/>
     </div>
   )
 }

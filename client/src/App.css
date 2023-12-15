@@ -30,6 +30,7 @@ body {
   background: #060606;
   font-family: var(--DMSemiBold);
   letter-spacing: -0.8px;
+  position: relative;
 }
 
 a {

@@ -1,0 +1,15 @@
+.container {
+    background-color: var(--Mint);
+    padding: 10px;
+    border: 1px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-top: 20px;
+    transition: var(--Transition);
+}
+
+.container:hover {
+    background-color: var(--LightPurple);
+    transition: var(--Transition);
+    cursor: pointer;
+}

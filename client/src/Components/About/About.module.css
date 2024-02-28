@@ -1,0 +1,16 @@
+.container {
+    height: 100%;
+    width: 100vw;
+    background-color: #ffffff;
+    border-top: 2px solid #000000;
+    padding: 20px;
+}
+
+.container h2 {
+    font-family: var(--DMBold);
+    letter-spacing: -1.3px;
+}
+
+.container h3 {
+    letter-spacing: -1px;
+}

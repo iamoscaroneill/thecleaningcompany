@@ -5,7 +5,7 @@ import { photos } from '../../utils/photos'
 const Title = () => {
     return (
         <div className={areas.title}>
-            <h1>Areas of Service*</h1>
+            <h1>Areas of Service</h1>
         </div>
     )
 }
@@ -26,14 +26,14 @@ const Details = (props) => {
 const Disclaimer = () => {
     return (
         <h3 className={areas.disclaimer}>
-            {`* While we strive to accommodate as many clients as we can, please note that an additional service fee may apply for locations beyond our normal service radius. This fee is implemented to cover the extra travel time and resources required to ensure our commitment to quality service. We encourage you to contact us for more information regarding services in your specific location.`}
+            {`While we strive to accommodate as many clients as we can, please note that an additional service fee may apply for locations beyond our normal service radius. This fee is implemented to cover the extra travel time and resources required to ensure our commitment to quality service. We encourage you to contact us for more information regarding services in your specific location.`}
         </h3>
     )
 }
 
 const Areas = () => {
     return (
-        <div className={areas.container}>
+        <div id="#areas" className={areas.container}>
             <Title/>
             <div className={areas.detailsContainer}>
                 {photos && photos.map((photo, i) => (

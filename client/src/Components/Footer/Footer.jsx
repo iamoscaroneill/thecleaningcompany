@@ -23,22 +23,32 @@ const Phone = () => {
     return (
         <div className={footer.phone}>
             <h4>Call</h4>
-            <a href='tel:3477094307'><h4>(347) 709-4307</h4></a>
+            <a href='tel:3477094307'><h4>347-709-4307</h4></a>
+        </div>
+    )
+}
+
+const Hours = () => {
+    return (
+        <div className={footer.hours}>
+            <h4>Hours</h4>
+            <p>Mon-Fri: 9 AM - 4PM</p>
+            <p>Sat: 11 AM - 3PM</p>
         </div>
     )
 }
 
 const Booking = () => {
     return (
-        <div className={footer.booking}>
-            <h4>Book Now <i className="fa-solid fa-calendar-plus"></i></h4>
-        </div>
+        <a className={footer.booking} href='https://thecleaningcompany-nyc.setmore.com/' target="_blank" rel="noopener noreferrer nofollow">
+            <h5>Book Now <i className="fa-solid fa-calendar-plus"></i></h5>
+        </a>
     )
 }
 
 const Copyright = () => {
     return (
-        <div className={footer.copyright}>Copyright © 2023 The Cleaning Company of New York, LLC</div>
+        <div className={footer.copyright}>Copyright © 2024 The Cleaning Company of New York, LLC</div>
     )
 }
 
@@ -49,10 +59,10 @@ const Footer = () => {
         <div className={footer.contact}>
             <Email/>
             <Phone/>
+            <Hours/>
             <Booking/>
+            <Copyright/>
         </div>
-
-        <Copyright/>
     </div>
   )
 }

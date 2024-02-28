@@ -3,7 +3,9 @@
   --DMXBold: 'DM Sans XBold';
   --DMBold: 'DM Sans Bold';
   --BrightPurple: #4a2ff7;
+  --LightPurple: #d4d4ff;
   --Mint: #7fffd4;
+  --Transition: .3s ease-in-out;
 }
 
 * {
@@ -27,7 +29,7 @@ html {
 }
 
 body {
-  background: #060606;
+  background: #ffffff;
   font-family: var(--DMSemiBold);
   letter-spacing: -0.8px;
   position: relative;

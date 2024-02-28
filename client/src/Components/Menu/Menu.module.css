@@ -1,0 +1,10 @@
+.links {
+    color: #ffffff;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.links:hover {
+    color: var(--Mint);
+    transition: .3s ease-in-out;
+}

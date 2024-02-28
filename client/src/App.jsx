@@ -1,18 +1,24 @@
 import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './Components/Navigation/Navigation'
-import Introduction from './Components/Introduction/Introduction'
-import Areas from './Components/Areas/Areas'
-import Stuff from './Components/Stuff/Stuff'
 import Footer from './Components/Footer/Footer'
+import Menu from './Components/Menu/Menu'
+import Home from './routes/Home/Home';
+import Prices from './routes/Prices/Prices';
+import Contact from './routes/Contact/Contact';
 
 const App = () => {
   return (
     <div className='app'>
       <Navigation/>
-      <Introduction/>
-      <Areas/>
-      <Stuff/>
-
+      <Menu/>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/pricing' element={<Prices/>}/>
+          <Route path='/contactus' element={<Contact/>}/>
+        </Routes>
+      </Router>
       <Footer/>
     </div>
   )

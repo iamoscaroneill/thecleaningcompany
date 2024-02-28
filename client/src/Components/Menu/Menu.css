@@ -1,0 +1,17 @@
+.menuContainer {
+    display: none;
+    transition: .3s ease-in-out;
+}
+
+.menuContainer.active {
+    height: 70px;
+    width: 100vw;
+    background-color: #000000;
+    position: fixed;
+    top: 75px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .3s ease-in-out;
+}

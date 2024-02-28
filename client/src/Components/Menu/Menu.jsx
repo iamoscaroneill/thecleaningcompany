@@ -1,5 +1,4 @@
 import { useContext } from 'react'
-import { Link } from 'react-router-dom'
 import './Menu.css'
 import menu from './Menu.module.css'
 import { links } from '../../utils/links'

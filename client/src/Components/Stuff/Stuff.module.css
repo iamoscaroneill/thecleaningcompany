@@ -6,7 +6,6 @@
     justify-content: space-evenly;
     flex-direction: column;
     background-color: #ffffff;
-    border-top: 2px solid #000000;
     padding: 0px 20px;
 }
 
@@ -17,7 +16,7 @@
 }
 
 .serviceTypes {
-    margin: 20px;
+    margin: 10px;
     background-color: var(--LightPurple);
     padding: 10px;
     min-width: 320px;
@@ -46,15 +45,7 @@
 
 .disclaimer {
     width: 85%;
-    /* background-color: #99fada; */
-    /* border: 1px solid black; */
-    /* border-right: 3px solid black; */
-    /* border-bottom: 3px solid black; */
     padding: 10px;
-}
-
-.styling {
-    /* text-decoration: underline; */
 }
 
 @media screen and (max-width: 940px) {
@@ -66,6 +57,5 @@
 
     .serviceContainer {
         flex-direction: column;
-        text-align: center;
     }
 }

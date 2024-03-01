@@ -5,7 +5,7 @@ const Main = () => {
     return (
         <div className={footer.main}>
             <img className={footer.logo} src={blob.purple} alt='logo'/>
-            <h2 className={footer.title}>The Cleaning Company</h2>
+            <a href='/'><h2 className={footer.title}>The Cleaning Company</h2></a>
         </div>
     )
 }
@@ -33,7 +33,7 @@ const Hours = () => {
         <div className={footer.hours}>
             <h4>Hours</h4>
             <p>Mon-Fri: 9 AM - 4PM</p>
-            <p>Sat: 11 AM - 3PM</p>
+            <p>Sat: 10 AM - 3PM</p>
         </div>
     )
 }

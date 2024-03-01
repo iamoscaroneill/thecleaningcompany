@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
-import stuff from './Stuff.module.css';
-import { services } from '../../utils/services';
+import { useContext } from 'react'
+import stuff from './Stuff.module.css'
+import { services } from '../../utils/services'
+import { AppContext } from '../../Context/AppContext'
 
 const Title = () => {
     return (
@@ -12,8 +14,8 @@ const Title = () => {
 
 const Services = (props) => {
     return (
-        <div id="#services" className={stuff.serviceTypes}>
-            <h3 className={stuff.styling}>{props.type}</h3>
+        <div className={stuff.serviceTypes}>
+            <h3>{props.type}</h3>
             <div className={stuff.serviceOptions}>
                 {props.options && props.options.map((options, i) => {
                     return (
@@ -37,8 +39,9 @@ const Disclaimer = () => {
 }
 
 const Stuff = () => {
+    const {serviceRef} = useContext(AppContext)
     return (
-        <div className={stuff.container}>
+        <div ref={serviceRef} id="services" className={stuff.container}>
             <Title/>
             <div className={stuff.serviceContainer}>
                 {services && services.map((service, i) => (

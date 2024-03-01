@@ -3,15 +3,15 @@ import terms from '../assets/documents/terms.pdf'
 export const links = [
     {
         type: 'Service Areas',
-        // link: '/areas'
+        link: '#areas'
     },
     {
         type: 'Services',
-        // link: '/services'
+        link: '#services'
     },
     {
         type: 'Pricing',
-        link: '/pricing'
+        link: '#pricing'
     },
     {
         type: 'Terms & Conditions',
@@ -19,6 +19,6 @@ export const links = [
     },
     {
         type: 'Contact Us',
-        // link: '/contactus'
+        link: '#contact'
     }
 ]

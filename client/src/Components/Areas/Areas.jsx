@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+import { useContext } from 'react'
+import { AppContext } from '../../Context/AppContext'
 import areas from './Areas.module.css'
 import { photos } from '../../utils/photos'
 
@@ -32,8 +34,10 @@ const Disclaimer = () => {
 }
 
 const Areas = () => {
+    const {areaRef} = useContext(AppContext)
+
     return (
-        <div id="#areas" className={areas.container}>
+        <div ref={areaRef} className={areas.container} id="areas">
             <Title/>
             <div className={areas.detailsContainer}>
                 {photos && photos.map((photo, i) => (

@@ -8,3 +8,9 @@
     color: var(--Mint);
     transition: .3s ease-in-out;
 }
+
+@media screen and (max-width: 529px) {
+    .links {
+        margin: 10px 0px;
+    }
+}

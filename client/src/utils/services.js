@@ -21,7 +21,7 @@ export const pricing = [
     {
         service: 'Residential',
         description: 'Kitchen, Bathroom, Living Room, or Bedroom cleaning (billed separately)',
-        price: '$100'
+        price: '$75'
     },
     {
         service: 'Post-Construction',
@@ -49,16 +49,16 @@ export const specials = [
     {
         service: 'Premium Kitchen Cleaning',
         description: 'Thorough cleaning of appliances, cabinets, dishes',
-        price: '$150'
+        price: '$125'
     },
     {
         service: 'Signature Cleaning Special',
         description: 'Standard cleaning of kitchen, bathroom, & living room',
-        price: '$250'
+        price: '$225'
     },
     {
         service: 'Apartment Turnover Painting',
         description: 'Reserved only for parties who are moving out of their current location and require the unit to be restored to original standards',
-        price: 'Contact Us'
+        price: 'Please Email Us'
     },
 ]

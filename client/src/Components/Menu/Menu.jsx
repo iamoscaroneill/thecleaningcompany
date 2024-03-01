@@ -3,17 +3,20 @@ import './Menu.css'
 import menu from './Menu.module.css'
 import { links } from '../../utils/links'
 import { AppContext } from '../../Context/AppContext'
+import setElement  from '../../utils/functions'
 
 const Menu = () => {
-    const { navMenu, menuRef, showMenu } = useContext(AppContext)
+    const { navMenu, menuRef, showMenu, serviceRef, areaRef, priceRef} = useContext(AppContext)
 
     return (
         <div ref={menuRef} className={`menuContainer ${navMenu ? 'active' : 'inactive'}`}>
+            {/* Menu Button (Close) */}
+            <button className={`closeButton ${navMenu ? 'active' : 'inactive' }`} onClick={showMenu}>Close</button>
+            
+            {/* Links */}
             { links && links.map((link, i) => {
                 return (
-                    <div className={menu.links} key={i} onClick={showMenu}>
-                        { link.type === 'Terms & Conditions' ? <a target='_blank' rel="noreferrer" href={link?.link}>{link.type}</a> : <a href={link?.link}>{link.type}</a> }
-                    </div>
+                    setElement(link, i, menu, showMenu, menuRef, serviceRef, areaRef, priceRef)
                 )
             })}
         </div>

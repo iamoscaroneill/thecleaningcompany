@@ -9,8 +9,17 @@
     transition: .3s ease-in-out;
 }
 
-@media screen and (max-width: 529px) {
+.links:nth-child(7) {
+    display: none;
+}
+
+@media screen and (max-width: 654px) {
     .links {
         margin: 10px 0px;
+        font-size: 20px;
+    }
+
+    .links:nth-child(7) {
+        display: inline;
     }
 }

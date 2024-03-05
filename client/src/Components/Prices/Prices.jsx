@@ -19,8 +19,9 @@ const Prices = () => {
 
     return (
         <div ref={priceRef} className={prices.container} id="pricing">
+            <h1 className={prices.title}>Prices</h1>
+
             <div className={prices.pricingContainer}>
-                <h1 className={prices.title}>Prices</h1>
                 <div className={prices.prices}>
                     { pricing && pricing.map((prices, i) => {
                     return (
@@ -35,8 +36,8 @@ const Prices = () => {
                 </div>
             </div>
             
+            <h1 className={prices.title}>Packages and Specials</h1>
             <div className={prices.packageContainer}>
-                <h2>Packages and Specials</h2>
                 <div className={prices.prices}>
                     { specials && specials.map((special, i) => {
                         return (

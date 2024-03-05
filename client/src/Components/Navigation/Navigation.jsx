@@ -23,7 +23,7 @@ const MenuButton = () => {
 
 const Appointment = () => {
     return ( 
-        <a className={nav.appointment} href='https://thecleaningcompany-nyc.setmore.com/' target="_blank" rel="noopener noreferrer nofollow">
+        <a className={nav.appointment} href='https://thecleaningcompany-nyc.setmore.com/services' target="_blank" rel="noopener noreferrer nofollow">
             <h4 className={nav.appText}>Book Now</h4>
             <i className="fa-solid fa-calendar-plus"></i>
         </a>

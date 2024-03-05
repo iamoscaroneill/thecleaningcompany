@@ -20,8 +20,10 @@
     display: none;
 }
 
-@media screen and (max-width: 529px) {
+@media screen and (max-width: 654px) {
     .menuContainer.active {
+        background: rgb(74,47,247);
+        background: radial-gradient(circle, rgba(74,47,247,1) 24%, rgba(212,212,255,1) 100%), url('https://grainy-gradients.vercel.app/noise.svg');
         top: 0px;
         height: 100%;
         justify-content: center;
@@ -31,14 +33,14 @@
     .closeButton.active {
         display: inline;
         position: absolute;
-        top: 30px;
+        top: 20px;
         left: 15px;
 
         border: none;
         outline: none;
         background-color: transparent;
         color: var(--Mint);
-        font-family: var(--DMSemiBold);
+        font-family: var(--DMBold);
         font-size: medium;
         letter-spacing: -1px;
         cursor: pointer;

@@ -1,13 +1,11 @@
 .container {
-    height: 100vh;
+    /* height: 100vh; */
     width: 100vw;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    top: 75px;
-    /* position: relative; */
     z-index: -999;
 }
 
@@ -17,7 +15,7 @@
 }
 
 .container h3 {
-    width: 80%;
+    width: 100%;
     margin-top: 10px;
 }
 
@@ -83,11 +81,11 @@ button:hover {
 }
 
 button[disabled] {
-        background-color: grey;
-        color: white;
-        padding: 15px;
-        cursor: not-allowed;
-    }
+    background-color: grey;
+    color: white;
+    padding: 15px;
+    cursor: not-allowed;
+}
 
 @media screen and (max-width: 529px) {
     input {

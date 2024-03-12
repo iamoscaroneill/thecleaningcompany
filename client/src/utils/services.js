@@ -41,7 +41,7 @@ export const pricing = [
     {
         service: 'Basement Organization',
         description: 'Thorough basement cleaning, tackling dust, cobwebs, and clutter to reveal the true potential of your space',
-        price: '$150'
+        price: '$120'
     },
 ]
 
@@ -49,16 +49,21 @@ export const specials = [
     {
         service: 'Premium Kitchen Cleaning',
         description: 'Thorough cleaning of appliances, cabinets, dishes',
-        price: '$125'
+        price: '$100'
     },
     {
         service: 'Signature Cleaning Special',
         description: 'Standard cleaning of kitchen, bathroom, & living room',
-        price: '$225'
+        price: '$200'
     },
     {
         service: 'Apartment Turnover Painting',
         description: 'Reserved only for parties who are moving out of their current location and require the unit to be restored to original standards',
+        price: 'Please Email Us'
+    },
+    {
+        service: 'After Hours Cleaning',
+        description: 'Our work hours are 9AM - 4PM on weekdays; 10AM - 3PM on Saturdays. Requests after these hours will incur an additional service fee',
         price: 'Please Email Us'
     },
 ]

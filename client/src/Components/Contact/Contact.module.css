@@ -23,8 +23,9 @@
     height: 100%;
     width: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
     margin: 10px 0px;
 }
 
@@ -80,11 +81,28 @@ button:hover {
     transition: .3s ease-in-out;
 }
 
-button[disabled] {
-    background-color: grey;
-    color: white;
-    padding: 15px;
-    cursor: not-allowed;
+.error {
+    height: auto;
+    width: 250px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(255, 192, 203, 0.495);
+    color: red;
+}
+
+.success {
+    height: auto;
+    width: 250px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(192, 255, 220, 0.495);
+    color: green;
+    margin-top: 20px;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 529px) {

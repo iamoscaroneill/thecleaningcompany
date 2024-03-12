@@ -3,7 +3,7 @@ import './Menu.css'
 import menu from './Menu.module.css'
 import { links } from '../../utils/links'
 import { AppContext } from '../../Context/AppContext'
-import setElement  from '../../utils/functions'
+import setElement from '../../utils/setElement'
 
 const Menu = () => {
     const { navMenu, menuRef, showMenu, serviceRef, areaRef, priceRef} = useContext(AppContext)

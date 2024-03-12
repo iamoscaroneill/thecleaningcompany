@@ -4,7 +4,6 @@ import Navigation from './Components/Navigation/Navigation'
 import Footer from './Components/Footer/Footer'
 import Menu from './Components/Menu/Menu'
 import Home from './routes/Home/Home'
-import Contact from './Components/Contact/Contact'
 
 const App = () => {
   return (
@@ -13,7 +12,6 @@ const App = () => {
       <Menu/>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/contact' element={<Contact/>}/>
         </Routes>
       <Footer/>
     </div>

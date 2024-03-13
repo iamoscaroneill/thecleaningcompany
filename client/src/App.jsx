@@ -5,8 +5,10 @@ import Footer from './Components/Footer/Footer'
 import Menu from './Components/Menu/Menu'
 import Home from './routes/Home/Home'
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { inject } from '@vercel/analytics';
 
 const App = () => {
+  inject()
   return (
     <div className='app'>
       <Navigation/>

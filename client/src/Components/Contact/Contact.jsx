@@ -40,6 +40,12 @@ const Contact = () => {
         setInput({...input, [e.target.name]: e.target.value})
     }
 
+    const webPageReload = () => {
+        setTimeout(() => {
+            window.location.reload(false);
+        }, 3000);
+    }
+
     const sendEmail = () => {
         setAttempt(true)
         try {
@@ -56,6 +62,7 @@ const Contact = () => {
                     message: '',
                 })
                 setSubmit(false)
+                webPageReload()
             },
             (error) => {
                 console.log('Unsuccessful...', error.text);

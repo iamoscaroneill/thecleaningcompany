@@ -17,6 +17,7 @@ const Contact = () => {
     const [data, setData] = useState()
     const [submit, setSubmit] = useState(false)
     const [success, setSuccess] = useState(false)
+    const [error, setError] = useState()
 
     useEffect(() => {
         if (submit) {
@@ -28,7 +29,7 @@ const Contact = () => {
 
     useEffect(() => {
         if (data && data.length === 0) {
-            setSuccess(true)
+            // setSuccess(true)
             sendEmail()
         } else {
             return
@@ -44,8 +45,8 @@ const Contact = () => {
             emailjs.sendForm(`${import.meta.env.VITE_SERVICE_ID}`, `${import.meta.env.VITE_TEMPLATE_ID}`, form.current, {
                 publicKey: `${import.meta.env.VITE_PUBLIC_KEY}`,
             }).then(() => {
-                setSuccess(true)
                 console.log('Message Sent!');
+                setSuccess(true)
                 setInput({ 
                     name: '',
                     email: '',
@@ -55,7 +56,8 @@ const Contact = () => {
                 setSubmit(false)
             },
             (error) => {
-                console.log('FAILED...', error.text);
+                console.log('Unsuccessful...', error.text);
+                setError('There was an error sending this message. Please try again.');
                 setSubmit(false);
                 return
             });
@@ -85,6 +87,7 @@ const Contact = () => {
             }) }
 
             { success ? <div className={contact.success}>Message Sent Successfully!</div> : '' }
+            { error ? <div className={contact.error}>{error}</div> : '' }
 
             <div className={contact.formcontainer}>
                 <form ref={form}>

@@ -4,6 +4,7 @@ import Navigation from './Components/Navigation/Navigation'
 import Footer from './Components/Footer/Footer'
 import Menu from './Components/Menu/Menu'
 import Home from './routes/Home/Home'
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route path='/' element={<Home/>}/>
         </Routes>
       <Footer/>
+      <SpeedInsights/>
     </div>
   )
 }

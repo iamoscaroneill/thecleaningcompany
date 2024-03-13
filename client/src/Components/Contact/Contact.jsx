@@ -17,7 +17,8 @@ const Contact = () => {
     const [data, setData] = useState()
     const [submit, setSubmit] = useState(false)
     const [success, setSuccess] = useState(false)
-    const [error, setError] = useState()
+    const [error, setError] = useState();
+    const [attempt, setAttempt] = useState(false)
 
     useEffect(() => {
         if (submit) {
@@ -29,7 +30,6 @@ const Contact = () => {
 
     useEffect(() => {
         if (data && data.length === 0) {
-            // setSuccess(true)
             sendEmail()
         } else {
             return
@@ -41,11 +41,13 @@ const Contact = () => {
     }
 
     const sendEmail = () => {
+        setAttempt(true)
         try {
             emailjs.sendForm(`${import.meta.env.VITE_SERVICE_ID}`, `${import.meta.env.VITE_TEMPLATE_ID}`, form.current, {
                 publicKey: `${import.meta.env.VITE_PUBLIC_KEY}`,
             }).then(() => {
                 console.log('Message Sent!');
+                setAttempt(false)
                 setSuccess(true)
                 setInput({ 
                     name: '',
@@ -57,12 +59,14 @@ const Contact = () => {
             },
             (error) => {
                 console.log('Unsuccessful...', error.text);
+                setAttempt(false)
                 setError('There was an error sending this message. Please try again.');
                 setSubmit(false);
                 return
             });
         } catch (error) {
             console.log(error);
+            setAttempt(false)
             setSubmit(false);
             return
         }
@@ -88,6 +92,7 @@ const Contact = () => {
 
             { success ? <div className={contact.success}>Message Sent Successfully!</div> : '' }
             { error ? <div className={contact.error}>{error}</div> : '' }
+            { attempt ? <div className={contact.attempt}>Sending...</div> : '' }
 
             <div className={contact.formcontainer}>
                 <form ref={form}>

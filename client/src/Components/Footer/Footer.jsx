@@ -23,7 +23,7 @@ const Phone = () => {
     return (
         <div className={footer.phone}>
             <h4>Call</h4>
-            <a href='tel:3472484247'><h4>347-248-4247</h4></a>
+            <a href='tel:3477094307'><h4>347-709-4307</h4></a>
         </div>
     )
 }

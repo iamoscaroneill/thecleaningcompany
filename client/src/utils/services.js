@@ -1,19 +1,19 @@
 export const services = [
     {
         type: 'Residential Cleaning',
-        options: ['Kitchen', 'Bathroom', 'Living Room', 'Bedroom', 'Basement']
+        options: ['Kitchen', 'Bathroom', 'Living Room', 'Bedroom', 'Basement', 'Yard']
     },
     {
         type: 'Post-Construction Cleaning',
-        options: ['Dust & Debris Removal', 'Floor Cleaning', 'Surface Cleaning', 'Wall Cleaning', 'General Organization']
+        options: ['Dust & Debris Removal', 'Floor Cleaning', 'Surface Cleaning', 'Wall Cleaning', 'Trash Removal', 'General Organization']
     },
     {
-        type: 'After-Party/Event Cleaning',
-        options: ['Trash Removal', 'Odor Neutralization', 'Bathroom Cleaning', 'Mopping', 'Security & Lockup']
+        type: 'Party or Event Cleaning',
+        options: ['Trash Removal', 'Odor Neutralization', 'Bathroom Cleaning', 'Mopping', 'Venue Lockup', 'Stock & Stow Furniture']
     },
     {
         type: 'Move In/Out Cleaning',
-        options: ['Window Cleaning', 'Floor Care', 'Deep Cleaning', 'Appliance Cleaning', 'General Upkeep']
+        options: ['Window Cleaning', 'Floor Care', 'Deep Cleaning', 'Appliance Cleaning', 'General Upkeep', 'Painting*']
     }
 ]
 
@@ -21,7 +21,7 @@ export const pricing = [
     {
         service: 'Residential',
         description: 'Kitchen, Bathroom, Living Room, or Bedroom cleaning (billed separately)',
-        price: '$75'
+        price: '$100'
     },
     {
         service: 'Post-Construction',
@@ -29,19 +29,19 @@ export const pricing = [
         price: '$150'
     },
     {
-        service: 'After-Party/Event',
+        service: 'Party or Event',
         description: 'Clearing away debris, emptying trash bins to spot-cleaning spills and sanitizing surfaces',
         price: '$150'
     },
     {
         service: 'Move-Out/Move-In',
         description: 'Sweeping and mopping floors, sanitizing surfaces, dusting fixtures and removing built-up grime',
-        price: '$125'
+        price: '$150'
     },
     {
-        service: 'Basement Organization',
-        description: 'Thorough basement cleaning, tackling dust, cobwebs, and clutter to reveal the true potential of your space',
-        price: '$120'
+        service: 'Attic, Basement, or Yard',
+        description: 'Thorough cleaning, tackling dust, cobwebs, and clutter to reveal the true potential of your space',
+        price: '$130'
     },
 ]
 
@@ -58,12 +58,12 @@ export const specials = [
     },
     {
         service: 'Apartment Turnover Painting',
-        description: 'Reserved only for parties who are moving out of their current location and require the unit to be restored to original standards',
+        description: 'Parties who are moving out of their current location and require the unit to be restored to original standards',
         price: 'Please Email Us'
     },
     {
         service: 'After Hours Cleaning',
-        description: 'Our work hours are 9AM - 4PM on weekdays; 10AM - 3PM on Saturdays. Requests after these hours will incur an additional service fee',
+        description: 'Requests after our normal hours of operation will incur an additional service fee',
         price: 'Please Email Us'
     },
 ]

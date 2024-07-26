@@ -41,7 +41,7 @@ const Hours = () => {
 const Booking = () => {
     return (
         <a className={footer.booking} href='https://thecleaningcompany-nyc.setmore.com/services' target="_blank" rel="noopener noreferrer nofollow">
-            <h5>Book Now <i className="fa-solid fa-calendar-plus"></i></h5>
+            <h5>Schedule Now<i className="fa-regular fa-clock"></i></h5>
         </a>
     )
 }

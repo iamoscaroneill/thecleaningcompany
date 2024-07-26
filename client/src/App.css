@@ -1,10 +1,17 @@
 :root {
-  --DMSemiBold: 'DM Sans SemiBold';
-  --DMXBold: 'DM Sans XBold';
-  --DMBold: 'DM Sans Bold';
+  --ITLight: 'Inter Tight Light';
+  --ITMedium: 'Inter Tight Medium';
+  --ITRegular: 'Inter Tight Regular';
+  --ITSemiBold: 'Inter Tight SemiBold';
   --BrightPurple: #4a2ff7;
-  --LightPurple: #d4d4ff;
   --Mint: #7fffd4;
+  --Light: #ffffff;
+  --Dark: #000000;
+  --OffWhite: #fbf2ea;
+  /* --OffWhite: #f7e5d6; */
+  --LightTwilight: #c6b2d8;
+  --StoneCypress: #86ab97;
+  --Pineneedle: #344D41;
   --Transition: .3s ease-in-out;
 }
 
@@ -17,7 +24,6 @@
   list-style-type: none;
   font-synthesis: none;
   text-decoration: none;
-  
 }
 
 ::-webkit-scrollbar {
@@ -29,10 +35,7 @@ html {
 }
 
 body {
-  background: #ffffff;
-  font-family: var(--DMSemiBold);
-  letter-spacing: -0.8px;
-  position: relative;
+  font-family: var(--ITMedium);
 }
 
 a {

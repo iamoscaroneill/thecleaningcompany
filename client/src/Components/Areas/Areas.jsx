@@ -4,10 +4,10 @@ import { AppContext } from '../../Context/AppContext'
 import areas from './Areas.module.css'
 import { photos } from '../../utils/photos'
 
-const Title = () => {
+const Header = () => {
     return (
-        <div className={areas.title}>
-            <h1>Areas of Service</h1>
+        <div className={areas.header}>
+            <h1>Where we service</h1>
         </div>
     )
 }
@@ -19,7 +19,7 @@ const Details = (props) => {
                 <img src={props.image}/>
             </div>
             <div className={areas.borough}>
-                {props.borough}
+                <h3>{props.borough}</h3>
             </div>
         </div>
     )
@@ -29,6 +29,8 @@ const Disclaimer = () => {
     return (
         <h3 className={areas.disclaimer}>
             {`While we strive to accommodate as many clients as we can, please note that an additional service fee may apply for locations beyond our normal service radius. This fee is implemented to cover the extra travel time and resources required to ensure our commitment to quality service. We encourage you to contact us for more information regarding services in your specific location.`}
+            <br/><br/>
+            {`* Nassau County, Long Island service begins Fall/Winter 2024.`}
         </h3>
     )
 }
@@ -38,7 +40,7 @@ const Areas = () => {
 
     return (
         <div ref={areaRef} className={areas.container} id="areas">
-            <Title/>
+            <Header/>
             <div className={areas.detailsContainer}>
                 {photos && photos.map((photo, i) => (
                     <Details

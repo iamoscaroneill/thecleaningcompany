@@ -1,57 +1,53 @@
 .container {
-    height: 100vh;
+    height: auto;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    background-color: #ffffff;
-    padding: 0px 20px;
+    color: var(--OffWhite);
+    padding: 50px;
+
 }
 
-.title {
-    font-family: var(--DMXBold);
-    letter-spacing: -1.8px;
-    color: #000000;
+.header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .serviceTypes {
-    margin: 10px;
-    background-color: var(--LightPurple);
-    padding: 10px;
-    min-width: 320px;
-    border: 1px solid black;
-    border-right: 3px solid black;
-    border-bottom: 3px solid black;
-    border-radius: 4px;
+    margin: 0px 10px 10px 10px;
+    padding: 10px 20px;
+    min-width: 280px;
+    border: 2px solid var(--OffWhite);
+    border-radius: 10px;
 }
 
 .serviceTypes h3 {
-    font-family: var(--DMXBold);
-    letter-spacing: -1.3px;
-}
-
-.serviceOptions {
-    margin-top: 5px;
-}
+    font-family: var(--ITSemiBold);
+ }
 
 .serviceContainer {
-    /* width: 100%; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
+.serviceOptions h4 {
+    font-family: var(--ITSemiBold);
+}
+
 .disclaimer {
-    width: 85%;
-    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    font-family: var(--ITSemiBold);
 }
 
 @media screen and (max-width: 940px) {
     .container {
         height: auto;
-        padding: 20px;
         align-items: center;
     }
 

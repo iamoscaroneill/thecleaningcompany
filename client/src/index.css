@@ -1,14 +1,19 @@
 @font-face {
-  font-family: 'DM Sans SemiBold';
-  src: url('./assets/fonts/DMSans-SemiBold.ttf');
+  font-family: 'Inter Tight Light';
+  src: url('./assets/fonts/InterTight-Light.ttf');
 }
 
 @font-face {
-  font-family: 'DM Sans Bold';
-  src: url('./assets/fonts/DMSans-Bold.ttf');
+  font-family: 'Inter Tight Medium';
+  src: url('./assets/fonts/InterTight-Medium.ttf');
 }
 
 @font-face {
-  font-family: 'DM Sans XBold';
-  src: url('./assets/fonts/DMSans-ExtraBold.ttf');
+  font-family: 'Inter Tight Regular';
+  src: url('./assets/fonts/InterTight-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Inter Tight SemiBold';
+  src: url('./assets/fonts/InterTight-SemiBold.ttf');
 }

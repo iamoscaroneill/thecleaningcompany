@@ -2,10 +2,6 @@ import terms from '../assets/documents/terms.pdf'
 
 export const links = [
     {
-        type: 'Service Areas',
-        link: '#areas'
-    },
-    {
         type: 'Services',
         link: '#services'
     },
@@ -22,7 +18,11 @@ export const links = [
         link: '#contact'
     },
     {
-        type: 'Book Now',
+        type: 'Discounts',
+        link: '#'
+    },
+    {
+        type: 'Schedule Now',
         link: 'https://thecleaningcompany-nyc.setmore.com/services'
     }
 ]

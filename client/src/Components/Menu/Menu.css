@@ -1,6 +1,7 @@
 .menuContainer {
     display: none;
     transition: .3s ease-in-out;
+    z-index: 1;
 }
 
 .menuContainer.active {
@@ -18,6 +19,7 @@
 
 .closeButton {
     display: none;
+
 }
 
 @media screen and (max-width: 654px) {
@@ -40,7 +42,7 @@
         outline: none;
         background-color: transparent;
         color: var(--Mint);
-        font-family: var(--DMBold);
+        font-family: var(--ITSemiBold);
         font-size: medium;
         letter-spacing: -1px;
         cursor: pointer;

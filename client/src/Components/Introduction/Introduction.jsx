@@ -1,15 +1,7 @@
+/* eslint-disable react/prop-types */
+import { useEffect, useState } from 'react'
 import intro from './Introduction.module.css'
-
-const Message = () => {
-    return (
-        <div className={intro.message}>
-            <div>Refresh, Revitalize, and Relish in Cleanliness</div>
-            <h3>
-                {`A clean environment is not just about tidiness; it's about creating a space that nurtures comfort, well-being, and peace of mind. Whether you're a busy professional seeking more free time, a parent striving for a healthier living space, or a business owner aiming to impress clients with impeccable premises – we've got you covered. We're committed to transforming your spaces into a haven of cleanliness, allowing you to focus on what matters most to you.`}
-            </h3>
-        </div>
-    )
-}
+import { prompts } from '../../utils/prompts'
 
 const Picture = () => {
     return (
@@ -17,13 +9,37 @@ const Picture = () => {
     )
 }
 
+const Main = ({ message }) => {
+    return (
+        <div className={intro.main}>
+            <h1>{message}</h1>
+        </div>
+    )
+}
+
+const Secondary = () => {
+    return (
+        <div className={intro.secondary}>
+            <h1>{`Keeping things clean and organized is good for you. People with clean houses are healthier than people with messy houses. Simple.`}</h1>
+        </div>
+    )
+}
+
 const Introduction = () => {
-  return (
-    <div className={intro.container}>
-        <Message/>
-        <Picture/>
-    </div>
-  )
+    useEffect(() => {
+        const random = Math.floor(Math.random() * prompts.length);
+        setMessage(prompts[random])
+    },[])
+
+    const [message, setMessage] = useState('')
+
+    return (
+        <div className={intro.container}>
+            <Main message={message}/>
+            <Picture/>
+            <Secondary/>
+        </div>
+    )
 }
 
 export default Introduction

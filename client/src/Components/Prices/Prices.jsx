@@ -8,7 +8,7 @@ const Services = ({service, description, price}) => {
     return (
         <div className={prices.service}>
             <h3>{service}</h3>
-            <h5>{description}</h5>
+            <h4>{description}</h4>
             <h2>{price}</h2>
         </div>
     )

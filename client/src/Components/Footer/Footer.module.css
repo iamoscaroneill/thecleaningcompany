@@ -1,20 +1,22 @@
 .container {
     height: auto;
     width: 100vw;
-    background-color: #000000;
-    color: aliceblue;
+    background-color: var(--Dark);
+    color: var(--Light);
     padding: 15px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     position: static;
     bottom: 0px;
+    font-family: var(--ITSemiBold);
 }
 
 .main {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    background-color: var(--Dark);
 }
 
 .logo {
@@ -24,8 +26,7 @@
 }
 
 .title {
-    font-family: var(--DMXBold);
-    letter-spacing: -1.7px;
+    font-family: var(--ITSemiBold);
 }
 
 .contact {

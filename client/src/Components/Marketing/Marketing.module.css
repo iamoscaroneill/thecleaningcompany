@@ -1,0 +1,30 @@
+.container {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--OffWhite);
+    padding: 50px;
+}
+
+.header {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question h2 {
+    margin-bottom: 10px;
+    font-family: var(--ITSemiBold);
+}
+
+.question h3 {
+    font-family: var(--ITSemiBold);
+}

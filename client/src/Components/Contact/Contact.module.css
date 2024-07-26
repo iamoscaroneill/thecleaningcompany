@@ -1,7 +1,9 @@
 .container {
-    /* height: 100vh; */
+    height: auto;
     width: 100vw;
-    padding: 20px;
+    background-color: var(--LightTwilight);
+    color: var(--OffWhite);
+    padding: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,13 +12,13 @@
 }
 
 .container h1 {
-    font-family: var(--DMBold);
-    letter-spacing: -1.8px;
+    font-family: var(--ITSemiBold);
 }
 
 .container h3 {
     width: 100%;
     margin: 15px 0px;
+    font-family: var(--ITSemiBold);
 }
 
 .formcontainer {
@@ -42,41 +44,42 @@ input {
     margin: 25px 0px;
     border: none;
     outline: none;
-    border-bottom: 2px solid #6e00ec;
-    font-family: var(--DMSemiBold);
-    letter-spacing: -0.8px;
+    background-color: #00000000;
+    border-bottom: 2px solid var(--OffWhite);
+    font-family: var(--ITSemiBold);
 }
 
 ::placeholder {
-  color: #000000;
+  color: var(--OffWhite);
   font-size: 15px;
 }
 
 textarea {
     margin: 20px 0px;
     width: 100%;
-    border: 2px solid #6e00ec;
-    font-family: var(--DMSemiBold);
-    letter-spacing: -0.8px;
+    background-color: #00000000;
+    border: 2px solid var(--OffWhite);
+    font-family: var(--ITSemiBold);
     padding: 2px;
+    border-radius: 10px;
 }
 
 button {
-    background-color: #4af4b0;
-    color: #000000;
-    border: none;
+    background-color: #00000000;
+    color: var(--OffWhite);
+    border: 2px solid var(--OffWhite);
     outline: none;
     padding: 10px;
     border-radius: 10px;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: var(--DMBold);
+    font-family: var(--ITSemiBold);
     transition: .3s ease-in-out;
 }
 
 button:hover {
-    background-color: #6e00ec;
-    color: #ffffff;
+    background-color: var(--OffWhite);
+    color: var(--LightTwilight);
     cursor: pointer;
     transition: .3s ease-in-out;
 }
@@ -88,7 +91,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: rgba(255, 192, 203, 0.495);
+    background-color: rgba(255, 192, 203, 0.729);
     color: red;
 }
 
@@ -99,7 +102,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(192, 255, 220, 0.495);
+    background-color: rgba(192, 255, 220, 0.729);
     color: green;
     margin-top: 20px;
     border-radius: 5px;

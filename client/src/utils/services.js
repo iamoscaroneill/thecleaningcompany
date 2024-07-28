@@ -21,27 +21,27 @@ export const pricing = [
     {
         service: 'Residential',
         description: 'Kitchen, Bathroom, Living Room, or Bedroom cleaning (billed separately)',
-        price: '$100'
+        price: '$85'
+    },
+    {
+        service: 'Attic, Basement, or Yard',
+        description: 'Thorough cleaning, tackling dust, cobwebs, and clutter to reveal the true potential of your space',
+        price: '$125'
+    },
+    {
+        service: 'Party or Event',
+        description: 'Clearing away debris, emptying trash bins to spot-cleaning spills and sanitizing surfaces',
+        price: '$125'
+    },
+    {
+        service: 'Move-Out/Move-In',
+        description: 'Sweeping and mopping floors, sanitizing surfaces, dusting fixtures and removing built-up grime',
+        price: '$125'
     },
     {
         service: 'Post-Construction',
         description: 'Removal of construction debris, dust, and residue',
         price: '$150'
-    },
-    {
-        service: 'Party or Event',
-        description: 'Clearing away debris, emptying trash bins to spot-cleaning spills and sanitizing surfaces',
-        price: '$150'
-    },
-    {
-        service: 'Move-Out/Move-In',
-        description: 'Sweeping and mopping floors, sanitizing surfaces, dusting fixtures and removing built-up grime',
-        price: '$150'
-    },
-    {
-        service: 'Attic, Basement, or Yard',
-        description: 'Thorough cleaning, tackling dust, cobwebs, and clutter to reveal the true potential of your space',
-        price: '$130'
     },
 ]
 
@@ -49,7 +49,7 @@ export const specials = [
     {
         service: 'Premium Kitchen Cleaning',
         description: 'Thorough cleaning of appliances, cabinets, dishes',
-        price: '$100'
+        price: '$110'
     },
     {
         service: 'Signature Cleaning Special',

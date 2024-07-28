@@ -100,13 +100,12 @@
     }
 
     .menuButton {
-        height: 75px;
-        width: 110px;
+        height: auto;
+        width: auto;
         display: flex;
         align-items: center;
-        justify-content: center;
         position: absolute;
-        left: 0px;
+        left: 10px;
         cursor: pointer;
         transition: .3s ease-in-out;
     }
@@ -122,9 +121,9 @@
 }
 
 @media screen and (max-width: 530px) {
-    .menuButton {
+    /* .menuButton {
         width: 90px;
-    }
+    } */
 
     .appText, .schedule {
         display: none;
@@ -136,13 +135,12 @@
         font-size: 20px;
     }
 
-    .menuButton {
+    /* .menuButton {
         width: 70px;  
-        padding: 5px;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    } */
 
     .menuText {
         display: none;

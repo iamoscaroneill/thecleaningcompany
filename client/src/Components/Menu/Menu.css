@@ -19,7 +19,13 @@
 
 .closeButton {
     display: none;
+}
 
+#schedule_element {
+    background-color: var(--Mint);
+    color: var(--Dark);
+    border-radius: 10px;
+    padding: 6px;
 }
 
 @media screen and (max-width: 654px) {
@@ -40,11 +46,10 @@
 
         border: none;
         outline: none;
-        background-color: transparent;
-        color: var(--Mint);
+        background-color: var(--Light);
+        color: var(--Dark);
         font-family: var(--ITSemiBold);
         font-size: medium;
-        letter-spacing: -1px;
         cursor: pointer;
     }
 }

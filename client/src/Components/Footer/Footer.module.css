@@ -53,15 +53,16 @@
 }
 
 .booking h5 {
-    padding: 10px;
-    background-color: var(--BrightPurple);
+    padding: 5px;
+    background-color: var(--Mint);
+    color: var(--Dark);
     transition: .3s ease-in-out;
     border-radius: 10px;
 }
 
 .booking h5:hover {
-    background-color: var(--Mint);
-    color: #000000;
+    background-color: var(--BrightPurple);
+    color: var(--Light);
     transition: .3s ease-in-out;
     cursor: pointer;
 }

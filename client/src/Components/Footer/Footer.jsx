@@ -22,8 +22,8 @@ const Email = () => {
 const Phone = () => {
     return (
         <div className={footer.phone}>
-            <h4>Call</h4>
-            <a href='tel:3477094307'><h4>347-709-4307</h4></a>
+            <h4>Please, text us!</h4>
+            <h4>347-709-4307</h4>
         </div>
     )
 }

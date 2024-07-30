@@ -21,7 +21,7 @@ export const pricing = [
     {
         service: 'Residential',
         description: 'Kitchen, Bathroom, Living Room, or Bedroom cleaning (billed separately)',
-        price: '$85'
+        price: '$40'
     },
     {
         service: 'Attic, Basement, or Yard',
@@ -47,14 +47,39 @@ export const pricing = [
 
 export const specials = [
     {
-        service: 'Premium Kitchen Cleaning',
-        description: 'Thorough cleaning of appliances, cabinets, dishes',
+        service: 'Studio',
+        description: 'Complete and standard cleaning of entire studio residence',
+        price: '$75'
+    },
+    {
+        service: '1 Bedroom',
+        description: 'Complete and standard cleaning of residence including kitchen, bathroom, 1 bedroom and living room',
         price: '$110'
     },
     {
-        service: 'Signature Cleaning Special',
-        description: 'Standard cleaning of kitchen, bathroom, & living room',
+        service: '2 Bedroom',
+        description: 'Complete and standard cleaning of residence including kitchen, 1 bathroom, 2 bedrooms and living room',
+        price: '$150'
+    },
+    {
+        service: '3 Bedroom',
+        description: 'Complete and standard cleaning of residence including kitchen, 1 bathroom, 3 bedrooms and living room',
+        price: '$175'
+    },
+    {
+        service: '4 Bedroom',
+        description: 'Complete and standard cleaning of residence including kitchen, 1 bathroom, 4 bedrooms and living room',
         price: '$200'
+    },
+    {
+        service: 'Premium Kitchen Cleaning',
+        description: 'Thorough cleaning of appliances, cabinets, dishes',
+        price: '$15 add-on'
+    },
+    {
+        service: 'Additional Bathroom Cleaning',
+        description: '',
+        price: '$20 add-on'
     },
     {
         service: 'Apartment Turnover Painting',

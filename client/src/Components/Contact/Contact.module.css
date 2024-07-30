@@ -2,6 +2,7 @@
     height: auto;
     width: 100vw;
     background-color: var(--LightTwilight);
+    background-image: url('../../assets/images/nnnoise.svg');
     color: var(--OffWhite);
     padding: 50px;
     display: flex;

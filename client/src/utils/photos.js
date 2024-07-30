@@ -5,7 +5,6 @@ import bronx from '../assets/images/bx-ow.png'
 import island from '../assets/images/island-ow.png'
 import purple from '../assets/images/cleaningcompany-1.png'
 import mint from '../assets/images/cleaningcompany.png'
-import whitenoise from '../assets/images/nnnoise.svg'
 
 export const photos = [
     {
@@ -33,8 +32,4 @@ export const photos = [
 export const blob = {
     purple: purple,
     mint: mint
-}
-
-export const noise = {
-    noise: whitenoise
 }

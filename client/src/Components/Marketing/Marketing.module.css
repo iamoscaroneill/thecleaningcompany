@@ -6,7 +6,6 @@
     justify-content: center;
     flex-direction: column;
     color: var(--OffWhite);
-    background-image: url('../../assets/images/nnnoise.svg');
     padding: 50px;
 }
 

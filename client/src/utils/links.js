@@ -19,7 +19,7 @@ export const links = [
     },
     {
         type: 'Discounts',
-        link: '#'
+        link: 'https://discount.thecleaningcompany.xyz'
     },
     {
         type: 'Schedule Now',

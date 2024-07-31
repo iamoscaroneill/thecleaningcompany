@@ -53,7 +53,7 @@ export const specials = [
     },
     {
         service: '1 Bedroom',
-        description: 'Complete and standard cleaning of residence including kitchen, bathroom, 1 bedroom and living room',
+        description: 'Complete and standard cleaning of residence including kitchen, 1 bathroom, 1 bedroom and living room',
         price: '$110'
     },
     {

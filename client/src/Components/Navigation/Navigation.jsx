@@ -29,7 +29,7 @@ const LinkPlatter = () => {
             <ul>
                 <li>Services</li>
                 <li>Pricing</li>
-                <li><a href='#'>Discount</a></li>
+                <li><a href='https://discount.thecleaningcompany.xyz' target='_blank' rel="noreferrer">Discounts</a></li>
                 <li>Contact Us</li>
             </ul>
         </div>

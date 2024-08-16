@@ -26,7 +26,7 @@ export const pricing = [
     {
         service: 'Attic, Basement, or Yard',
         description: 'Thorough cleaning, tackling dust, cobwebs, and clutter to reveal the true potential of your space',
-        price: '$125'
+        price: '$100'
     },
     {
         service: 'Party or Event',

@@ -30,8 +30,8 @@
 
 @media screen and (max-width: 654px) {
     .menuContainer.active {
-        background: rgb(74,47,247);
-        background: radial-gradient(circle, rgba(74,47,247,1) 24%, rgba(212,212,255,1) 100%), url('https://grainy-gradients.vercel.app/noise.svg');
+        background: var(--Dark);
+        /* background: radial-gradient(circle, rgba(74,47,247,1) 24%, rgba(212,212,255,1) 100%), url('https://grainy-gradients.vercel.app/noise.svg'); */
         top: 0px;
         height: 100%;
         justify-content: center;

@@ -1,8 +1,8 @@
 .container {
     height: auto;
     width: 100vw;
-    background-color: var(--LightTwilight);
-    color: var(--OffWhite);
+    background-color: var(--OffWhite);
+    color: var(--Dark);
     padding: 50px;
     display: flex;
     align-items: center;
@@ -46,12 +46,12 @@ input {
     border: none;
     outline: none;
     background-color: #00000000;
-    border-bottom: 2px solid var(--OffWhite);
+    border-bottom: 2px solid var(--Dark);
     font-family: var(--ITSemiBold);
 }
 
 ::placeholder {
-  color: var(--OffWhite);
+  color: var(--Dark);
   font-size: 15px;
 }
 
@@ -59,7 +59,7 @@ textarea {
     margin: 20px 0px;
     width: 100%;
     background-color: #00000000;
-    border: 2px solid var(--OffWhite);
+    border: 2px solid var(--Dark);
     font-family: var(--ITSemiBold);
     padding: 2px;
     border-radius: 10px;
@@ -67,8 +67,8 @@ textarea {
 
 button {
     background-color: #00000000;
-    color: var(--OffWhite);
-    border: 2px solid var(--OffWhite);
+    color: var(--Dark);
+    border: 2px solid var(--Dark);
     outline: none;
     padding: 10px;
     border-radius: 10px;
@@ -79,8 +79,8 @@ button {
 }
 
 button:hover {
-    background-color: var(--OffWhite);
-    color: var(--LightTwilight);
+    background-color: var(--Mint);
+    color: var(--Dark);
     cursor: pointer;
     transition: .3s ease-in-out;
 }

@@ -6,7 +6,6 @@ export const AppContext = createContext();
 export const AppContextProvider = props => {
     const menuRef = useRef(null);
     const serviceRef = useRef(null);
-    const areaRef = useRef(null);
     const priceRef = useRef(null);
     const [navMenu, setNavMenu] = useState(false);
     const showMenu = () => setNavMenu(!navMenu);
@@ -16,7 +15,6 @@ export const AppContextProvider = props => {
             value={{ 
                 menuRef,
                 serviceRef,
-                areaRef,
                 priceRef,
                 navMenu, 
                 setNavMenu,

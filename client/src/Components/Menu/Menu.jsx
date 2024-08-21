@@ -6,7 +6,7 @@ import { AppContext } from '../../Context/AppContext'
 import setElement from '../../utils/setElement'
 
 const Menu = () => {
-    const { navMenu, menuRef, showMenu, serviceRef, areaRef, priceRef} = useContext(AppContext)
+    const { navMenu, menuRef, showMenu, serviceRef, priceRef} = useContext(AppContext)
 
     return (
         <div ref={menuRef} className={`menuContainer ${navMenu ? 'active' : 'inactive'}`}>
@@ -16,7 +16,7 @@ const Menu = () => {
             {/* Links */}
             { links && links.map((link, i) => {
                 return (
-                    setElement(link, i, menu, showMenu, menuRef, serviceRef, areaRef, priceRef)
+                    setElement(link, i, menu, showMenu, menuRef, serviceRef, priceRef)
                 )
             })}
         </div>

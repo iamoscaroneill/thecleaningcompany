@@ -1,8 +1,8 @@
-import brooklyn from '../assets/images/bk-ow.png'
-import queens from '../assets/images/qns-ow.png'
-import manhattan from '../assets/images/mtn-ow.png'
-import bronx from '../assets/images/bx-ow.png'
-import island from '../assets/images/island-ow.png'
+import brooklyn from '../assets/images/bk.png'
+import queens from '../assets/images/qns.png'
+import manhattan from '../assets/images/mtn.png'
+import bronx from '../assets/images/bx.png'
+import island from '../assets/images/island.png'
 import purple from '../assets/images/cleaningcompany-1.png'
 import mint from '../assets/images/cleaningcompany.png'
 

@@ -1,5 +1,6 @@
 import footer from './Footer.module.css'
 import { blob } from '../../utils/photos'
+import { links } from '../../utils/links'
 
 const Main = () => {
     return (
@@ -22,8 +23,8 @@ const Email = () => {
 const Phone = () => {
     return (
         <div className={footer.phone}>
-            <h4>Please, text us!</h4>
-            <h4>347-709-4307</h4>
+            <h4>Please, contact us!</h4>
+            <h4>929-548-2828</h4>
         </div>
     )
 }
@@ -34,6 +35,14 @@ const Hours = () => {
             <h4>Hours</h4>
             <p>Mon-Fri: 9 AM - 4PM</p>
             <p>Sat: 10 AM - 3PM</p>
+        </div>
+    )
+}
+
+const Terms = () => {
+    return (
+        <div>
+            <a className={footer.terms} href={links[2].link} target='_blank' rel="noreferrer">{links[2].type} &nbsp; <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
     )
 }
@@ -60,6 +69,7 @@ const Footer = () => {
             <Email/>
             <Phone/>
             <Hours/>
+            <Terms/>
             <Booking/>
             <Copyright/>
         </div>

@@ -27,9 +27,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-}
+    flex-wrap: wrap;}
 
 .packageContainer {
     height: auto;
@@ -40,6 +38,8 @@
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-bottom: 40px;
+
 }
 
 .service {

@@ -31,7 +31,7 @@ const LinkPlatter = () => {
             <ul>
                 <li><a href="#services" onClick={() => { serviceRef.current?.scrollIntoView({ behavior: 'smooth' }) }}>Services</a></li>
                 <li><a href="#pricing" onClick={() => { priceRef.current?.scrollIntoView({ behavior: 'smooth' }) }}>Pricing</a></li>
-                <li><a href='https://discount.thecleaningcompany.xyz' target='_blank' rel="noreferrer">Discounts</a></li>
+                {/* <li><a href='https://discount.thecleaningcompany.xyz' target='_blank' rel="noreferrer">Discounts</a></li> */}
                 <li><a href="#contact" onClick={() => { serviceRef.current?.scrollIntoView({ behavior: 'smooth' }) }}>Contact Us</a></li>
             </ul>
         </div>

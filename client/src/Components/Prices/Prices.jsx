@@ -19,7 +19,24 @@ const Prices = () => {
 
     return (
         <div ref={priceRef} className={prices.container} id="pricing">
-            <h1 className={prices.title}>Prices</h1>
+            <h1 className={prices.title}>Packages</h1>
+            <div className={prices.packageContainer}>
+                <div className={prices.prices}>
+                    { specials && specials.map((special, i) => {
+                        return (
+                            <Services
+                                key={i}
+                                service={special.service}
+                                description={special.description}
+                                price={special.price}
+                            />
+                        )
+                    }) }
+                </div>
+            </div>
+
+
+            <h1 className={prices.title}>Additional Services</h1>
 
             <div className={prices.pricingContainer}>
                 <div className={prices.prices}>
@@ -35,22 +52,7 @@ const Prices = () => {
                     }) }
                 </div>
             </div>
-            
-            <h1 className={prices.title}>Packages and Specials</h1>
-            <div className={prices.packageContainer}>
-                <div className={prices.prices}>
-                    { specials && specials.map((special, i) => {
-                        return (
-                            <Services
-                                key={i}
-                                service={special.service}
-                                description={special.description}
-                                price={special.price}
-                            />
-                        )
-                    }) }
-                </div>
-            </div>
+        
         </div>
   )
 }

@@ -22,7 +22,7 @@ const Marketing = () => {
   return (
     <div className={marketing.container}>
         <Header/>
-        <Question question={'Who you are.'} answer={`A hardworking and busy professional who wants to their space to be spotless clean but just doesn't have the time to do it.`}/>
+        <Question question={'Who you are.'} answer={`A hardworking and busy professional who wants their space to be spotless clean but just doesn't have the time to do it.`}/>
         <Question question={'What you want.'} answer={'A clean, nuturing enviroment for your peace of mind, for your guests, or for your parents who stop by unannounced.'}/>
         <Question question={'How we can help you with what you want.'} answer={`We'll help transform your space into a haven of cleanliness, allowing you to focus on what matters most to you.`}/>
         <Question question={`So...what's next, exactly?`} answer={`You give us a ring, and we'll step-in, literally, to help you clean things up.`}/>

@@ -30,7 +30,7 @@ const Disclaimer = () => {
         <h3 className={areas.disclaimer}>
             {`While we strive to accommodate as many clients as we can, please note that an additional service fee may apply for locations beyond our normal service radius. This fee is implemented to cover the extra travel time and resources required to ensure our commitment to quality service. We encourage you to contact us for more information regarding services in your specific location.`}
             <br/><br/>
-            {`* Nassau County, Long Island service begins Fall/Winter 2024.`}
+            {/* {`* Nassau County, Long Island service begins Fall/Winter 2024.`} */}
         </h3>
     )
 }

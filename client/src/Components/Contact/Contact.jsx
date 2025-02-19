@@ -20,6 +20,8 @@ const Contact = () => {
     const [error, setError] = useState();
     const [attempt, setAttempt] = useState(false)
 
+    // Upon clicking the submit button, this process will check the form to see if all fields are populated
+    // If there are one or more fields left unpopulated, the process will end and an error message will be displayed
     useEffect(() => {
         if (submit) {
             const { empty } = findError(input)
@@ -28,6 +30,7 @@ const Contact = () => {
         }
     }, [input, submit])
 
+    // This process confirms that all fields are populated and will execute the process of sending an email
     useEffect(() => {
         if (data && data.length === 0) {
             sendEmail()
@@ -40,6 +43,7 @@ const Contact = () => {
         setInput({...input, [e.target.name]: e.target.value})
     }
 
+    // Preventing the page from reloading upon successful email submission
     const webPageReload = () => {
         setTimeout(() => {
             window.location.reload(false);
@@ -82,8 +86,8 @@ const Contact = () => {
 
     return (
         <div className={contact.container} id="contact">
-            <h1>Contact Us</h1>
-            <h3>
+            <h1 id="contact_header">Contact Us</h1>
+            <h3 id="feedback">
                 {`Your feedback matters! We value your input and want to provide the best service possible. Please use the form below to
                 submit any questions, comments, or concerns you may have. Whether it's a suggestion for improvement, a query about our
                 services, or simply a compliment you'd like to share, we're here to listen. Your insights help us continually enhance
@@ -91,18 +95,20 @@ const Contact = () => {
                 from you!`}
             </h3>
 
+            {/* Should there be an exception detected from the 'findError' function, the 'sendMessage' function will send one or all related error messages to the user */}
+            {/* Errors within the error state variable are errors coming from email.js */}
             { data && data.map((x, i) => {
                 return (
-                    <div className={contact.error} key={i}>{sendMessage(x)}</div>
+                    <div id="error_frontend" className={contact.error} key={i}>{sendMessage(x)}</div>
                 )
             }) }
 
-            { success ? <div className={contact.success}>Message Sent Successfully!</div> : '' }
-            { error ? <div className={contact.error}>{error}</div> : '' }
-            { attempt ? <div className={contact.attempt}>Sending...</div> : '' }
+            { success ? <div id="success" className={contact.success}>Message Sent Successfully!</div> : '' }
+            { error ? <div id="error_backend" className={contact.error}>{error}</div> : '' }
+            { attempt ? <div id="attempt" className={contact.attempt}>Sending...</div> : '' }
 
-            <div className={contact.formcontainer}>
-                <form ref={form}>
+            <div id="form_container" className={contact.formcontainer}>
+                <form id="form" ref={form}>
                     <input 
                         type="text" 
                         id="name" 
@@ -140,7 +146,7 @@ const Contact = () => {
                         required>
                     </textarea>
                 </form>
-                <button onClick={() => {setSubmit(true)}}>Submit</button>
+                <button id="submit" onClick={() => {setSubmit(true)}}>Submit</button>
             </div>
 
 

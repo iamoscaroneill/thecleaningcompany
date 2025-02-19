@@ -67,19 +67,17 @@
     cursor: pointer;
 }
 
-h5 i {
-    margin-left: 5px;
-}
-
 .copyright {
     position: absolute;
     bottom: 10px;
     font-size: 14px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
     .container {
+        width: auto;
         align-items: center;
+        font-size: 14px;
     }
 
     .main {
@@ -87,14 +85,23 @@ h5 i {
         justify-content: center;
     }
 
+    .contact {
+        height: auto;
+    }
+
     .booking {
         position: relative;
         right: inherit;
         margin-bottom: 10px;
+        margin-left: 30px;
+    }
+
+    .copyright {
+        position: absolute;
     }
 }
 
-@media screen and (max-width: 729px) {
+@media screen and (max-width: 829px) {
     .container {
         height: fit-content;
     }
@@ -120,5 +127,6 @@ h5 i {
     .booking {
         margin-top: 10px;
         margin-bottom: 25px;
+        margin-left: 0;
     }
 }

@@ -1,26 +1,27 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from 'react'
 import intro from './Introduction.module.css'
-import { prompts } from '../../utils/prompts'
-
-const Picture = () => {
-    return (
-        <div className={intro.image}></div>
-    )
-}
+import { prompts, data } from '../../utils/prompts'
+import { hero } from '../../utils/photos'
 
 const Main = ({ message }) => {
     return (
         <div className={intro.main}>
-            <h1>{message}</h1>
+            <h1 id="main_message">{message}</h1>
         </div>
     )
 }
 
-const Secondary = () => {
+const Picture = ({ photo }) => {
+    return (
+        <img id="main_photo" alt="living spaces" className={intro.image} src={photo}/>
+    )
+}
+
+const Secondary = ({ fact }) => {
     return (
         <div className={intro.secondary}>
-            <h1>{`Keeping things clean and organized is good for you. People with clean houses are healthier than people with messy houses. Simple.`}</h1>
+            <h1 id="main_fact">{fact}</h1>
         </div>
     )
 }
@@ -31,13 +32,25 @@ const Introduction = () => {
         setMessage(prompts[random])
     },[])
 
+    useEffect(() => {
+        const random = Math.floor(Math.random() * hero.length);
+        setPhoto(hero[random])
+    },[])
+
+    useEffect(() => {
+        const random = Math.floor(Math.random() * data.length);
+        setFact(data[random])
+    },[])
+
     const [message, setMessage] = useState('')
+    const [photo, setPhoto] = useState('')
+    const [fact, setFact] = useState('')
 
     return (
-        <div className={intro.container}>
+        <div id="introduction" className={intro.container}>
             <Main message={message}/>
-            <Picture/>
-            <Secondary/>
+            <Picture photo={photo}/>
+            <Secondary fact={fact}/>
         </div>
     )
 }

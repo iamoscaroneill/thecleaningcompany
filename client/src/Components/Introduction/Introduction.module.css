@@ -18,8 +18,8 @@
 }
 
 .image {
-    background-image: url('../../assets/images/A.jpg');
     background-size: cover;
+    object-fit: cover;
     background-repeat:no-repeat;
     background-position: center;
     height: 65%;
@@ -37,33 +37,8 @@
     background-color: var(--Light);
 }
 
-/* .message {
-    background-color: #ffffff;
-    color: #000000;
-    height: 100%;
-    width: 50%;
-    padding: 0px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-right: 2px solid black;
-} */
-
-/* .message div {
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-    margin-bottom: 5px;
-    font-size: 28px;
-} */
-
-/* .message h3 {
-    letter-spacing: -1px;
-} */
-
-
-
-@media screen and (max-width: 800px) {
-    
+@media screen and (max-width: 830px) {
+    .container {
+        height: auto;
+    }
 }

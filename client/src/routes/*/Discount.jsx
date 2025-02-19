@@ -1,4 +1,3 @@
-import React from 'react'
 import discount from './Discount.module.css';
 
 const Discount = () => {

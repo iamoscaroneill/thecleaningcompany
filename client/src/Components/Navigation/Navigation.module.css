@@ -79,10 +79,6 @@
     border-radius: 8px;
 }
 
-.appText {
-    margin-right: 5px;
-}
-
 .schedule:hover {
     background-color: var(--BrightPurple);
     color: #ffffff;

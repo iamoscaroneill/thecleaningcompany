@@ -6,10 +6,10 @@ import { AppContext } from '../../Context/AppContext';
 
 const Title = () => {
     return (
-        <div className={nav.title}>
+        <a href="/" className={nav.title}>
             <img className={nav.nav_logo} src={blob.mint} alt='main-logo'/>
-            <h3><a href='/'>The Cleaning Company</a></h3>
-        </div>
+            <h3>The Cleaning Company</h3>
+        </a>
     )
 }
 
@@ -41,8 +41,7 @@ const LinkPlatter = () => {
 const Schedule = () => {
     return ( 
         <a className={nav.schedule} href='https://thecleaningcompany-nyc.setmore.com/services' target="_blank" rel="noopener noreferrer nofollow">
-            <h4 className={nav.appText}>Schedule</h4>
-            <i className="fa-regular fa-clock"></i>
+            <h4 className={nav.appText}>Schedule Now</h4>
         </a>
     )
 }

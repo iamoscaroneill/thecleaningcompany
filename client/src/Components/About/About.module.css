@@ -2,11 +2,13 @@
     height: 100%;
     width: 100vw;
     padding: 50px 20px;
-    background-image: linear-gradient(180deg, var(--OffWhite), var(--Light));;
+    background-image: linear-gradient(180deg, var(--OffWhite), var(--Light));
+    text-align: center;
 }
 
 .container h3 {
     font-family: var(--ITSemiBold);
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 800px) {

@@ -101,7 +101,7 @@
     }
 }
 
-@media screen and (max-width: 829px) {
+@media screen and (max-width: 839px) {
     .container {
         height: fit-content;
     }

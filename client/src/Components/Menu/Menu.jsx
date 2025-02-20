@@ -11,7 +11,7 @@ const Menu = () => {
     return (
         <div ref={menuRef} className={`menuContainer ${navMenu ? 'active' : 'inactive'}`}>
             {/* Menu Button (Close) */}
-            <button className={`closeButton ${navMenu ? 'active' : 'inactive' }`} onClick={showMenu}>Close</button>
+            <button id="closeMenu_button" className={`closeButton ${navMenu ? 'active' : 'inactive' }`} onClick={showMenu}>Close</button>
             
             {/* Links */}
             { links && links.map((link, i) => {
@@ -19,6 +19,8 @@ const Menu = () => {
                     setElement(link, i, menu, showMenu, menuRef, serviceRef, priceRef)
                 )
             })}
+
+            <div id="copyright_menu">© 2025 The Cleaning Company of New York, LLC</div>
         </div>
     )
 }

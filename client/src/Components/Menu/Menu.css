@@ -21,21 +21,34 @@
     display: none;
 }
 
-#schedule_element {
+#schedule_menu {
     background-color: var(--Mint);
     color: var(--Dark);
     border-radius: 10px;
     padding: 6px;
 }
 
+#copyright_menu {
+    display: none;
+}
+
 @media screen and (max-width: 654px) {
     .menuContainer.active {
         background: var(--Dark);
-        /* background: radial-gradient(circle, rgba(74,47,247,1) 24%, rgba(212,212,255,1) 100%), url('https://grainy-gradients.vercel.app/noise.svg'); */
+        background: radial-gradient(circle, rgba(74,47,247,1) 24%, rgba(212,212,255,1) 100%), url('https://grainy-gradients.vercel.app/noise.svg');
         top: 0px;
         height: 100%;
         justify-content: center;
         flex-direction: column;
+    }
+
+    #copyright_menu {
+        display: flex;
+        position: absolute;
+        bottom: 10px;
+        font-family: var(--ITSemiBold);
+        font-size: 14px;
+        color: #ffffff;
     }
 
     .closeButton.active {

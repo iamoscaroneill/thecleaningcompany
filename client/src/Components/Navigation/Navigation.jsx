@@ -7,8 +7,8 @@ import { AppContext } from '../../Context/AppContext';
 const Title = () => {
     return (
         <a href="/" id="home_nav" className={nav.title}>
-            <img className={nav.nav_logo} src={blob.mint} alt='main-logo'/>
-            <h3>The Cleaning Company</h3>
+            <img id="logo_nav" className={nav.nav_logo} src={blob.mint} alt='main-logo'/>
+            <h3 id="title_nav">The Cleaning Company</h3>
         </a>
     )
 }
@@ -16,7 +16,7 @@ const Title = () => {
 const MenuButton = () => {
     const { menuRef, showMenu } = useContext(AppContext);
     return (
-        <div ref={menuRef} className={nav.menuButton} onClick={showMenu}>
+        <div id="menu_button" ref={menuRef} className={nav.menuButton} onClick={showMenu}>
             <i className="fa-solid fa-bars"></i>
             <h4 className={nav.menuText}>Menu</h4>
         </div>
@@ -29,10 +29,9 @@ const LinkPlatter = () => {
     return (
         <div className={nav.platter}>
             <ul>
-                <li><a href="#services" onClick={() => { serviceRef.current?.scrollIntoView({ behavior: 'smooth' }) }}>Services</a></li>
-                <li><a href="#pricing" onClick={() => { priceRef.current?.scrollIntoView({ behavior: 'smooth' }) }}>Pricing</a></li>
-                {/* <li><a href='https://discount.thecleaningcompany.xyz' target='_blank' rel="noreferrer">Discounts</a></li> */}
-                <li><a href="#contact" onClick={() => { serviceRef.current?.scrollIntoView({ behavior: 'smooth' }) }}>Contact Us</a></li>
+                <li><a id="services_nav" href="#services" onClick={() => { serviceRef.current?.scrollIntoView({ behavior: 'smooth' }) }}>Services</a></li>
+                <li><a id="pricing_nav" href="#pricing" onClick={() => { priceRef.current?.scrollIntoView({ behavior: 'smooth' }) }}>Pricing</a></li>
+                <li><a id="contact_nav" href="#contact" onClick={() => { serviceRef.current?.scrollIntoView({ behavior: 'smooth' }) }}>Contact Us</a></li>
             </ul>
         </div>
     )

@@ -21,7 +21,7 @@ const Contact = () => {
     const [attempt, setAttempt] = useState(false)
 
     // Upon clicking the submit button, this process will check the form to see if all fields are populated
-    // If there are one or more fields left unpopulated, the process will end and an error message will be displayed
+    // If there are one or more fields left unpopulated, the function will deliver the input left unfilled
     useEffect(() => {
         if (submit) {
             const { empty } = findError(input)
@@ -30,7 +30,7 @@ const Contact = () => {
         }
     }, [input, submit])
 
-    // This process confirms that all fields are populated and will execute the process of sending an email
+    // This function will execute the process of sending an email
     useEffect(() => {
         if (data && data.length === 0) {
             sendEmail()
@@ -99,12 +99,12 @@ const Contact = () => {
             {/* Errors within the error state variable are errors coming from email.js */}
             { data && data.map((x, i) => {
                 return (
-                    <div id="error_frontend" className={contact.error} key={i}>{sendMessage(x)}</div>
+                    <div id="error_input" className={contact.error} key={i}>{sendMessage(x)}</div>
                 )
             }) }
 
             { success ? <div id="success" className={contact.success}>Message Sent Successfully!</div> : '' }
-            { error ? <div id="error_backend" className={contact.error}>{error}</div> : '' }
+            { error ? <div id="error_emailjs" className={contact.error}>{error}</div> : '' }
             { attempt ? <div id="attempt" className={contact.attempt}>Sending...</div> : '' }
 
             <div id="form_container" className={contact.formcontainer}>

@@ -11,37 +11,9 @@ export const services = [
         type: 'Party or Event Cleaning',
         options: ['Trash Removal', 'Odor Neutralization', 'Bathroom Cleaning', 'Mopping', 'Venue Lockup', 'Stock & Stow Furniture']
     },
-    // {
-    //     type: 'Move In/Out Cleaning',
-    //     options: ['Window Cleaning', 'Floor Care', 'Deep Cleaning', 'Appliance Cleaning', 'General Upkeep', 'Painting*']
-    // }
-]
-
-export const pricing = [
-    // {
-    //     service: 'Residential',
-    //     description: 'Kitchen, Bathroom, Living Room, or Bedroom cleaning (billed separately)',
-    //     price: '$40'
-    // },
     {
-        service: 'Attic, Basement, or Yard',
-        description: 'Thorough cleaning, tackling dust, cobwebs, and clutter to reveal the true potential of your space',
-        price: '$100'
-    },
-    {
-        service: 'Party or Event',
-        description: 'Clearing away debris, emptying trash bins to spot-cleaning spills and sanitizing surfaces',
-        price: '$125'
-    },
-    // {
-    //     service: 'Move-Out/Move-In',
-    //     description: 'Sweeping and mopping floors, sanitizing surfaces, dusting fixtures and removing built-up grime',
-    //     price: '$125'
-    // },
-    {
-        service: 'Post-Construction',
-        description: 'Removal of construction debris, dust, and residue',
-        price: '$150'
+        type: 'Commercial Space Cleaning',
+        options: ['Office & Workspace Cleaning', 'Restroom Sanitation', 'Breakroom & Kitchen Cleaning', 'High-Touch Surface Disinfection', 'Trash Removal', 'Floor Care']
     },
 ]
 
@@ -75,6 +47,29 @@ export const specials = [
         service: 'Additional Bathroom Cleaning',
         description: 'Any additional bathrooms in the household',
         price: '$20 add-on'
+    }
+]
+
+export const pricing = [
+    {
+        service: 'Attic, Basement, or Yard',
+        description: 'Thorough cleaning, tackling dust, cobwebs, and clutter to reveal the true potential of your space',
+        price: 'Starting at $100'
+    },
+    {
+        service: 'Party or Event',
+        description: 'Clearing away debris, emptying trash bins to spot-cleaning spills and sanitizing surfaces',
+        price: 'Starting at $125'
+    },
+    {
+        service: 'Post-Construction',
+        description: 'Removal of construction debris, dust, and residue',
+        price: 'Starting at $150'
+    },
+    {
+        service: 'Commerical Spaces',
+        description: 'Sweeping and mopping floors, sanitizing surfaces, dusting fixtures and removing built-up grime',
+        price: 'Please Email Us'
     },
     {
         service: 'Apartment Turnover Painting',

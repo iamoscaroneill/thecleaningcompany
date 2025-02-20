@@ -1,25 +1,25 @@
 /* eslint-disable react/prop-types */
 import { useContext } from 'react'
-import stuff from './Stuff.module.css'
+import types from './ServiceTypes.module.css'
 import { services } from '../../utils/services'
 import { AppContext } from '../../Context/AppContext'
 
 const Header = () => {
     return (
-        <div className={stuff.header}>
-            <h1>Services we currently offer</h1>
+        <div className={types.header}>
+            <h1 id="service_header">Services we currently offer</h1>
         </div>
     )
 }
 
 const Services = (props) => {
     return (
-        <div className={stuff.serviceTypes}>
-            <h3>{props.type}</h3>
-            <div className={stuff.serviceOptions}>
+        <div id={`service_${props.index}`} className={types.serviceTypes}>
+            <h3 id={`serviceTitle_${props.index}`}>{props.type}</h3>
+            <div id={`option_${props.index}`} className={types.serviceOptions}>
                 {props.options && props.options.map((options, i) => {
                     return (
-                        <h4 key={i}>{options}</h4>
+                        <h4 key={i} data-cleaning-option={options}>{options}</h4>
                     )
                 })}
             </div>
@@ -29,7 +29,7 @@ const Services = (props) => {
 
 const Disclaimer = () => {
     return (
-        <h3 className={stuff.disclaimer}>
+        <h3 id="service_disclaimer" className={types.disclaimer}>
             {'Please be advised that our residential cleaning services for kitchen, bathroom, living room, and bedroom, etc. are billed separately, allowing you to customize your cleaning experience. We believe in transparent pricing and are happy to assist with any questions or specific service combinations.'}
             <br/>
             {/* {Place paragraph below into new disclaimer component outside of this...} */}
@@ -38,15 +38,16 @@ const Disclaimer = () => {
     )
 }
 
-const Stuff = () => {
+const ServiceTypes = () => {
     const {serviceRef} = useContext(AppContext)
     return (
-        <div ref={serviceRef} id="services" className={stuff.container}>
+        <div ref={serviceRef} id="services" className={types.container}>
             <Header/>
-            <div className={stuff.serviceContainer}>
+            <div className={types.serviceContainer}>
                 {services && services.map((service, i) => (
                     <Services
                         key={i}
+                        index={i}
                         type={service.type}
                         options={service.options}
                     />
@@ -57,4 +58,4 @@ const Stuff = () => {
     )
 }
 
-export default Stuff
+export default ServiceTypes

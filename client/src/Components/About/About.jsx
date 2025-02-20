@@ -2,8 +2,8 @@ import about from './About.module.css'
 
 const About = () => {
     return (
-        <div className={about.container}>
-            <h2>About Us</h2>
+        <div id="about_main_container"className={about.container}>
+            <h1 id="about_section">About Us</h1>
             <h3>{`We're committed to providing unparalleled cleaning services tailored to the unique needs of our diverse clientele.`}</h3>
             <br/>
             <h3>{`At The Cleaning Company, we believe that a clean environment is the cornerstone of a healthy and thriving community. Our
@@ -18,7 +18,7 @@ const About = () => {
 
             <br/>
 
-            <h2>Our Mission</h2>
+            <h1 id="mission_section">Our Mission</h1>
             <h3>{`We aim to redefine cleanliness and elevate the standards of hygiene in the bustling metropolis of New York City.
             Committed to excellence, we strive to create a cleaner and healthier environment for our clients by delivering top-notch
             cleaning services tailored to their unique needs. Our dedicated team of experienced and highly trained professionals is

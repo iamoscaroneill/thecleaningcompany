@@ -33,8 +33,7 @@ const Hours = () => {
     return (
         <div id="operation_hours" className={footer.hours}>
             <h4>Hours</h4>
-            <p>Mon-Fri: 9 AM - 4PM</p>
-            <p>Sat: 10 AM - 3PM</p>
+            <p>Mon-Sat: 9 AM - 5 PM</p>
         </div>
     )
 }
@@ -55,7 +54,7 @@ const Booking = () => {
 
 const Copyright = () => {
     return (
-        <div className={footer.copyright}>© 2025 The Cleaning Company of New York, LLC</div>
+        <div id="copyright_footer" className={footer.copyright}>© 2025 The Cleaning Company of New York, LLC</div>
     )
 }
 

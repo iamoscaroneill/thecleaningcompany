@@ -18,10 +18,6 @@ export const links = [
         link: '#contact'
     },
     {
-        type: 'Discounts',
-        link: 'https://discount.thecleaningcompany.xyz'
-    },
-    {
         type: 'Schedule Now',
         link: 'https://thecleaningcompany-nyc.setmore.com/services'
     }

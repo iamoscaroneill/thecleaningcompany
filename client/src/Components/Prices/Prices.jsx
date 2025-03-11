@@ -20,6 +20,7 @@ const Prices = () => {
     return (
         <div ref={priceRef} className={prices.container} id="pricing">
             <h1 id="package_title" className={prices.title}>Packages</h1>
+            
             <div className={prices.packageContainer}>
                 <div className={prices.prices}>
                     { specials && specials.map((special, i) => {
@@ -39,6 +40,9 @@ const Prices = () => {
 
 
             <h1 id="addtl_service_title" className={prices.title}>Additional Services</h1>
+            <div id={prices.disclaimer}>
+                <h4>Please contact us ahead of time prior to booking the services below.</h4>
+            </div>
             <div className={prices.pricingContainer}>
                 <div className={prices.prices}>
                     { pricing && pricing.map((prices, i) => {
@@ -55,7 +59,7 @@ const Prices = () => {
                     }) }
                 </div>
             </div>
-        
+
         </div>
   )
 }

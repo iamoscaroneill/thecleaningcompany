@@ -1,5 +1,3 @@
-import terms from '../assets/documents/terms.pdf'
-
 export const links = [
     {
         type: 'Services',
@@ -11,7 +9,7 @@ export const links = [
     },
     {
         type: 'Terms & Conditions',
-        link: terms
+        link: 'https://docs.google.com/document/d/1pizTGrCgmpaifyQ0JZ1qj90GzHetj1E5gg5NOqY4DEk/edit?tab=t.0'
     },
     {
         type: 'Contact Us',

@@ -72,3 +72,8 @@
     flex-wrap: wrap;
     color: var(--Dark);
 }
+
+#disclaimer {
+    color: var(--BrightPurple);
+    font-family: var(--ITSemiBold);
+}

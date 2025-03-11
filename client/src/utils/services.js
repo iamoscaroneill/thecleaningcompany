@@ -1,19 +1,25 @@
+import { servicePhotos } from "./photos"
+
 export const services = [
     {
         type: 'Residential Cleaning',
-        options: ['Kitchen', 'Bathroom', 'Living Room', 'Bedroom', 'Basement', 'Yard']
+        options: 'Kitchen, Bathroom, Living Room, Bedroom, Basement, Yard',
+        image: servicePhotos.loft
     },
     {
         type: 'Post-Construction Cleaning',
-        options: ['Dust & Debris Removal', 'Floor Cleaning', 'Surface Cleaning', 'Wall Cleaning', 'Trash Removal', 'General Organization']
+        options: 'Dust & Debris Removal, Floor Cleaning, Surface Cleaning, Wall Cleaning, Trash Removal, General Organization',
+        image: servicePhotos.construction
     },
     {
         type: 'Party or Event Cleaning',
-        options: ['Trash Removal', 'Odor Neutralization', 'Bathroom Cleaning', 'Mopping', 'Venue Lockup', 'Stock & Stow Furniture']
+        options: 'Trash Removal, Odor Neutralization, Bathroom Cleaning, Mopping, Venue Lockup, Stock & Stow Furniture',
+        image: servicePhotos.party
     },
     {
         type: 'Commercial Space Cleaning',
-        options: ['Office & Workspace Cleaning', 'Restroom Sanitation', 'Breakroom & Kitchen Cleaning', 'High-Touch Surface Disinfection', 'Trash Removal', 'Floor Care']
+        options: 'Office & Workspace Cleaning, Restroom Sanitation, Breakroom & Kitchen Cleaning, High-Touch Surface Disinfection, Trash Removal, Floor Care',
+        image: servicePhotos.office
     },
 ]
 
@@ -41,12 +47,12 @@ export const specials = [
     {
         service: 'Premium Kitchen Cleaning',
         description: 'Deep cleaning of appliances, cabinets, dishes',
-        price: '$15 add-on'
+        price: '$25 add-on'
     },
     {
         service: 'Additional Bathroom Cleaning',
         description: 'Any additional bathrooms in the household',
-        price: '$20 add-on'
+        price: '$40 add-on'
     }
 ]
 

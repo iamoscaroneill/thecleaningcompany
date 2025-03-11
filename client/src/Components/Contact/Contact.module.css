@@ -1,7 +1,6 @@
 .container {
     height: auto;
     width: 100vw;
-    background-color: var(--OffWhite);
     color: var(--Dark);
     padding: 50px;
     display: flex;

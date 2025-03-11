@@ -15,13 +15,12 @@ const Header = () => {
 const Services = (props) => {
     return (
         <div id={`service_${props.index}`} className={types.serviceTypes}>
+            <img className={types.images} src={props.image} />
+
             <h3 id={`serviceTitle_${props.index}`}>{props.type}</h3>
+
             <div id={`option_${props.index}`} className={types.serviceOptions}>
-                {props.options && props.options.map((options, i) => {
-                    return (
-                        <h4 key={i} data-cleaning-option={options}>{options}</h4>
-                    )
-                })}
+                <h4 data-cleaning-option={props.options}>{props.options}</h4>
             </div>
         </div>
     )
@@ -50,6 +49,7 @@ const ServiceTypes = () => {
                         index={i}
                         type={service.type}
                         options={service.options}
+                        image={service.image}
                     />
                 ))}
             </div>

@@ -1,7 +1,7 @@
-import brooklyn from '../assets/images/bk.png'
-import queens from '../assets/images/qns.png'
-import manhattan from '../assets/images/mtn.png'
-import bronx from '../assets/images/bx.png'
+import brooklyn from '../assets/images/cities/bk.jpg'
+import queens from '../assets/images/cities/qns.jpg'
+import manhattan from '../assets/images/cities/mtn.jpg'
+import bronx from '../assets/images/cities/bx.jpg'
 // import island from '../assets/images/island.png'
 import purple from '../assets/images/cleaningcompany-1.png'
 import mint from '../assets/images/cleaningcompany.png'
@@ -12,23 +12,27 @@ import D from '../assets/images/main/D.jpg'
 import E from '../assets/images/main/E.jpg'
 import F from '../assets/images/main/F.jpg'
 import G from '../assets/images/main/G.jpg'
+import loft from '../assets/images/services/loft.jpg'
+import construction from '../assets/images/services/construction.jpg'
+import party from '../assets/images/services/party.jpg'
+import office from '../assets/images/services/office.jpg'
 
 export const photos = [
-    {
-        image: brooklyn,
-        borough: 'Brooklyn'
-    },
     {
         image: manhattan,
         borough: 'Manhattan'
     },
     {
-        image: queens,
-        borough: 'Queens'
+        image: brooklyn,
+        borough: 'Brooklyn'
     },
     {
         image: bronx,
         borough: 'The Bronx'
+    },
+    {
+        image: queens,
+        borough: 'Queens'
     },
 ]
 
@@ -38,3 +42,7 @@ export const blob = {
 }
 
 export const hero = [A, B, C, D, E, F, G]
+
+export const servicePhotos = {
+    loft, construction, party, office
+}

@@ -1,8 +1,7 @@
 .container {
     height: 100%;
     width: 100vw;
-    padding: 50px 20px;
-    background-image: linear-gradient(180deg, var(--OffWhite), var(--Light));
+    padding: 50px;
     text-align: center;
 }
 

@@ -17,11 +17,8 @@
 }
 
 .serviceTypes {
-    margin: 0px 10px 10px 10px;
-    padding: 10px 20px;
-    min-width: 280px;
-    border: 2px solid var(--Dark);
-    border-radius: 10px;
+    margin: 20px 10px;
+    width: 300px;
 }
 
 .serviceTypes h3 {
@@ -35,13 +32,24 @@
     flex-wrap: wrap;
 }
 
+.serviceOptions {
+    height: 80px; 
+    width: 300px;
+}
+
 .serviceOptions h4 {
     font-family: var(--ITSemiBold);
+    color: var(--BrightPurple);
+}
+
+.images { 
+    width: 300px;
+    object-fit: cover;
 }
 
 .disclaimer {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 40px;
     font-family: var(--ITSemiBold);
 }
 

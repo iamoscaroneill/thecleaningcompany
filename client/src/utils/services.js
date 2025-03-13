@@ -47,7 +47,7 @@ export const specials = [
     {
         service: 'Premium Kitchen Cleaning',
         description: 'Deep cleaning of appliances, cabinets, dishes',
-        price: '$25 add-on'
+        price: '$40 add-on'
     },
     {
         service: 'Additional Bathroom Cleaning',

@@ -39,9 +39,9 @@ const Prices = () => {
             </div>
 
 
-            <h1 id="addtl_service_title" className={prices.title}>Additional Services</h1>
+            <h1 id={prices.addtl_service_title} className={prices.title}>Additional Services</h1>
             <div id={prices.disclaimer}>
-                <h4>Please contact us ahead of time prior to booking the services below.</h4>
+                <h4>Please email or text us to book the services below for a personalized consultation and invoice.</h4>
             </div>
             <div className={prices.pricingContainer}>
                 <div className={prices.prices}>

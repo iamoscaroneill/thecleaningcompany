@@ -46,7 +46,7 @@ const Terms = () => {
 
 const Booking = () => {
     return (
-        <a className={footer.booking} id="schedule_footer" href='https://thecleaningcompany-nyc.setmore.com/services' target="_blank" rel="noopener noreferrer nofollow">
+        <a className={footer.booking} id="schedule_footer" href='https://calendar.google.com/calendar/appointments/AcZssZ3woW5iCWUfa6-zevyaI4M2pPY6u95m9amEMr8=?gv=true' target="_blank" rel="noopener noreferrer nofollow">
             <h5>Schedule Now</h5>
         </a>
     )

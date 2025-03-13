@@ -39,7 +39,7 @@ const LinkPlatter = () => {
 
 const Schedule = () => {
     return ( 
-        <a className={nav.schedule} id="schedule_nav" href='https://thecleaningcompany-nyc.setmore.com/services' target="_blank" rel="noopener noreferrer nofollow">
+        <a className={nav.schedule} id="schedule_nav" href='https://calendar.google.com/calendar/appointments/AcZssZ3woW5iCWUfa6-zevyaI4M2pPY6u95m9amEMr8=?gv=true' target="_blank" rel="noopener noreferrer nofollow">
             <h4 className={nav.appText}>Schedule Now</h4>
         </a>
     )

@@ -4,7 +4,7 @@ import { AppContext } from '../../Context/AppContext'
 import prices from './Prices.module.css'
 import { pricing, specials } from '../../utils/services'
 
-const Services = ({service, description, price, index, type}) => {
+const Service = ({service, description, price, index, type}) => {
     return (
         <div id={`${type}_${index}`} className={prices.service}>
             <h3 id={`${type}_room_${index}`}>{service}</h3>
@@ -25,7 +25,7 @@ const Prices = () => {
                 <div className={prices.prices}>
                     { specials && specials.map((special, i) => {
                         return (
-                            <Services
+                            <Service
                                 key={i}
                                 index={i}
                                 type={"main"}
@@ -41,13 +41,13 @@ const Prices = () => {
 
             <h1 id={prices.addtl_service_title} className={prices.title}>Additional Services</h1>
             <div id={prices.disclaimer}>
-                <h4>Please email or text us to book the services below for a personalized consultation and invoice.</h4>
+                <h4>Please email or text us about the services below for a personalized consultation and invoice.</h4>
             </div>
             <div className={prices.pricingContainer}>
                 <div className={prices.prices}>
                     { pricing && pricing.map((prices, i) => {
                     return (
-                        <Services 
+                        <Service 
                             key={i} 
                             index={i}
                             type={"secondary"}

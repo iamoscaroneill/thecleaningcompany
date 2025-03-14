@@ -29,7 +29,7 @@ const Services = (props) => {
 const Disclaimer = () => {
     return (
         <h3 id="service_disclaimer" className={types.disclaimer}>
-            {'Please be advised that our residential cleaning services for kitchen, bathroom, living room, and bedroom, etc. are billed separately, allowing you to customize your cleaning experience. We believe in transparent pricing and are happy to assist with any questions or specific service combinations.'}
+            {'Please be advised that our residential cleaning services for attic, basement, and yard are billed separately, allowing you to customize your cleaning experience. We believe in transparent pricing and are happy to assist with any questions or specific service combinations.'}
             <br/>
             {/* {Place paragraph below into new disclaimer component outside of this...} */}
             {/* {"We strive to offer a wide variety of professional cleaning services to meet all of our customers' needs. However, we recognize that we may not have every service you're looking for listed on our website. If you don't see a specific cleaning service you require, please don't hesitate to contact us. We would be more than happy to discuss providing any cleaning service that would help make your life easier and keep your residence clean. We aim to be your one-stop cleaning solution, so please reach out if you need a cleaning service that you don't see on our site. Our goal is 100% customer satisfaction, and we encourage you to contact us so we can work together to meet your unique cleaning needs."} */}

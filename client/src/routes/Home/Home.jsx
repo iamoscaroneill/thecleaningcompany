@@ -7,6 +7,7 @@ import Marketing from '../../Components/Marketing/Marketing'
 import Footer from '../../Components/Footer/Footer'
 import home from './Home.module.css'
 import About from '../../Components/About/About'
+import Subscriptions from '../../Components/Subscriptions/Subscriptions'
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <Areas/>
             <ServiceTypes/>
             <Prices/>
+            <Subscriptions/>
             <Contact/>
             <About/>
             <Footer/>

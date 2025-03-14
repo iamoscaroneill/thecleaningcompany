@@ -93,25 +93,25 @@ export const subscriptions = [
     {
         service: 'Monthly Studio Cleaning',
         description: 'Complete cleaning of entire studio residence, 4 times monthly',
-        price: '$400/month',
-        link: 'https://buy.stripe.com/3cs01L8HgguP4JG3cc?prefilled_promo_code=LETSGETCLEAN'
+        price: '$300/month',
+        link: 'https://buy.stripe.com/3cs01L8HgguP4JG3cc'
     },
     {
         service: 'Monthly 1 Bedroom Cleaning',
         description: 'Complete cleaning of entire 1 bedroom residence, 4 times monthly',
-        price: '$500/month',
-        link: 'https://buy.stripe.com/9AQ6q9f5E6Uf8ZW9AB?prefilled_promo_code=LETSGETCLEAN'
+        price: '$400/month',
+        link: 'https://buy.stripe.com/9AQ6q9f5E6Uf8ZW9AB'
     },
     {
         service: 'Monthly 2 Bedroom Cleaning',
         description: 'Complete cleaning of entire 2 bedroom residence, 4 times monthly',
-        price: '$600/month',
-        link: 'https://buy.stripe.com/5kA7ude1A1zV5NK8wy?prefilled_promo_code=LETSGETCLEAN'
+        price: '$500/month',
+        link: 'https://buy.stripe.com/5kA7ude1A1zV5NK8wy'
     },
     {
         service: 'Monthly 3 Bedroom Cleaning',
         description: 'Complete cleaning of entire 3 bedroom residence, 4 times monthly',
-        price: '$700/month',
-        link: 'https://buy.stripe.com/5kAbKtcXwdiD1xu5kn?prefilled_promo_code=LETSGETCLEAN'
+        price: '$600/month',
+        link: 'https://buy.stripe.com/5kAbKtcXwdiD1xu5kn'
     },
 ]

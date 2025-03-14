@@ -21,10 +21,6 @@ const Subscriptions = () => {
     <div id={sub.sub_container}>
         <h1 id="sub_title" className={sub.title}>Subscriptions</h1>
 
-        <div id={sub.disclaimer}>
-            <h4>Use code: LETSGETCLEAN for $100 off your monthly subscription for 12 months.</h4>
-        </div>
-
         <div className={sub.packageContainer}>
             <div className={sub.prices}>
                 { subscriptions && subscriptions.map((subscription, i) => {

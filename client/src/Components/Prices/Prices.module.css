@@ -64,7 +64,24 @@
 }
 
 .service h2 {
-    height: 36px; 
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service h2 a {
+    font-size: 15px;
+    background-color: var(--Mint);
+    padding: 5px;
+    border-radius: 8px;
+    transition: var(--Transition);
+}
+
+.service h2 a:hover {
+    background-color: var(--BrightPurple);
+    color: #ffffff;
+    transition: var(--Transition);
 }
 
 .prices {

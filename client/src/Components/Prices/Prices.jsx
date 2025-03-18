@@ -4,12 +4,15 @@ import { AppContext } from '../../Context/AppContext'
 import prices from './Prices.module.css'
 import { pricing, specials } from '../../utils/services'
 
-const Service = ({service, description, price, index, type}) => {
+const Service = ({service, description, price, index, type, link}) => {
     return (
         <div id={`${type}_${index}`} className={prices.service}>
             <h3 id={`${type}_room_${index}`}>{service}</h3>
             <h4 id={`${type}_desc_${index}`}>{description}</h4>
-            <h2 id={`${type}_prices_${index}`}>{price}</h2>
+            <h2 id={`${type}_prices_${index}`}>
+                {price}
+                { link ? <a href={link} target="_blank" rel="noopener noreferrer nofollow">Schedule</a> : "" }
+            </h2>
         </div>
     )
 }
@@ -32,6 +35,7 @@ const Prices = () => {
                                 service={special.service}
                                 description={special.description}
                                 price={special.price}
+                                link={special.link}
                             />
                         )
                     }) }

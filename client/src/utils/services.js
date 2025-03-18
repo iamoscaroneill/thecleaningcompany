@@ -27,22 +27,26 @@ export const specials = [
     {
         service: 'Studio',
         description: 'Complete and standard cleaning of entire studio residence',
-        price: '$100'
+        price: '$100',
+        link: 'https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1MetPrr2i_IT78PCiM67buuA3OT7ihHV4USKQ7sZTqiNuhRezYcX7Nl6sZMyiM-2IkbdI2mZOM'
     },
     {
         service: '1 Bedroom',
         description: 'Complete and standard cleaning of residence including kitchen, 1 bathroom, 1 bedroom and living room',
-        price: '$125'
+        price: '$125',
+        link: 'https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3cxCtUKVLxML5AQccwuO-Mc46BY-zg3kl4l4kf6wkQ0BhSnwpoEP_Z5D13-2yl-evPhN4rfujz'
     },
     {
         service: '2 Bedroom',
         description: 'Complete and standard cleaning of residence including kitchen, 1 bathroom, 2 bedrooms and living room',
-        price: '$150'
+        price: '$150',
+        link: 'https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1PowF7lImsdOQ58XmZllUFXVwpVVUQ-RS68RE-QVuMEtFavJtYj0p6xQt7xOvpQt9q2KQBGorm'
     },
     {
         service: '3 Bedroom',
         description: 'Complete and standard cleaning of residence including kitchen, 1 bathroom, 3 bedrooms and living room',
-        price: '$175'
+        price: '$175',
+        link: 'https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0LYGagj16_YcvKg3w8JFEvNyuEYN0xHsGyrLwsCcYVJ9gaNXeM6MCwVqkq2O53zaIhNsNaAwLn'
     },
     {
         service: 'Premium Kitchen Cleaning',
@@ -51,8 +55,8 @@ export const specials = [
     },
     {
         service: 'Additional Bathroom Cleaning',
-        description: 'Any additional bathrooms in the household',
-        price: '$40 add-on'
+        description: 'Cleaning of additional bathrooms in the household',
+        price: '$40/bathroom'
     }
 ]
 

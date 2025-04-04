@@ -3,7 +3,7 @@ import './Menu.css'
 import menu from './Menu.module.css'
 import { links } from '../../utils/links'
 import { AppContext } from '../../Context/AppContext'
-import setElement from '../../utils/setElement'
+import SetElement from '../../utils/setElement'
 
 const Menu = () => {
     const { navMenu, menuRef, showMenu, serviceRef, priceRef} = useContext(AppContext)
@@ -15,8 +15,9 @@ const Menu = () => {
             
             {/* Links */}
             { links && links.map((link, i) => {
+
                 return (
-                    setElement(link, i, menu, showMenu, menuRef, serviceRef, priceRef)
+                    SetElement(link, i, menu, showMenu, menuRef, serviceRef, priceRef)
                 )
             })}
 

@@ -1,6 +1,7 @@
 import footer from './Footer.module.css'
 import { blob } from '../../utils/photos'
 import { links } from '../../utils/links'
+import { useStatsigClient } from "@statsig/react-bindings";
 
 const Main = () => {
     return (
@@ -12,10 +13,12 @@ const Main = () => {
 }
 
 const Email = () => {
+    const { client } = useStatsigClient();
+    const handleClick = () => client.logEvent("email_footer", "Footer");
     return (
         <div className={footer.email}>
             <h4>Email</h4>
-            <a href='mailTo:contact@thecleaningcompany.xyz'><h4>contact@thecleaningcompany.xyz</h4></a>
+            <a href='mailTo:contact@thecleaningcompany.xyz' onClick={() => handleClick()}><h4>contact@thecleaningcompany.xyz</h4></a>
         </div>
     )
 }
@@ -39,14 +42,20 @@ const Hours = () => {
 }
 
 const Terms = () => {
+    const { client } = useStatsigClient();
+    const handleClick = () => client.logEvent("terms_footer", "Footer");
+
     return (
-        <a id="terms_footer" className={footer.terms} href={links[2].link} target='_blank' rel="noreferrer">{links[2].type} &nbsp; <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <a id="terms_footer" onClick={() => handleClick()} className={footer.terms} href={links[2].link} target='_blank' rel="noreferrer">{links[2].type} &nbsp; <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
     )
 }
 
 const Booking = () => {
+    const { client } = useStatsigClient();
+    const handleClick = () => client.logEvent("schedule_footer", "Footer");
+
     return (
-        <a className={footer.booking} id="schedule_footer" href='https://calendar.google.com/calendar/appointments/AcZssZ3woW5iCWUfa6-zevyaI4M2pPY6u95m9amEMr8=?gv=true' target="_blank" rel="noopener noreferrer nofollow">
+        <a className={footer.booking} onClick={() => handleClick()} id="schedule_footer" href='https://calendar.google.com/calendar/appointments/AcZssZ3woW5iCWUfa6-zevyaI4M2pPY6u95m9amEMr8=?gv=true' target="_blank" rel="noopener noreferrer nofollow">
             <h5>Schedule Now</h5>
         </a>
     )

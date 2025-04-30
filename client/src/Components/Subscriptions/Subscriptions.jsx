@@ -1,12 +1,8 @@
 /* eslint-disable react/prop-types */
-import React from 'react'
 import sub from './Subscriptions.module.css'
 import { subscriptions } from '../../utils/services'
-import { useStatsigClient } from "@statsig/react-bindings";
 
 const Service = ({ service, description, price, index, type, link }) => {
-    const { client } = useStatsigClient();
-    const handleClick = () => client.logEvent(`${service}`, "Subscription");
 
     return (
         <div id={`${type}_${index}`} className={sub.service}>
@@ -14,7 +10,7 @@ const Service = ({ service, description, price, index, type, link }) => {
             <h4 id={`${type}_desc_${index}`}>{description}</h4>
             <h2 id={`${type}_prices_${index}`}>
                 {price}
-                <a href={link} onClick={() => handleClick()} target="_blank" rel="noopener noreferrer nofollow">Subscribe</a>
+                <a href={link} target="_blank" rel="noopener noreferrer nofollow">Subscribe</a>
             </h2>
         </div>
     )

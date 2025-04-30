@@ -3,7 +3,6 @@ import { useEffect, useState, useRef } from 'react'
 import contact from './Contact.module.css'
 import { findError, sendMessage } from '../../utils/messageHandler'
 import emailjs from '@emailjs/browser'
-import { useStatsigClient } from "@statsig/react-bindings";
 
 const Contact = () => {
     const form = useRef();
@@ -85,10 +84,6 @@ const Contact = () => {
         
     };
 
-    // Analytics
-    const { client } = useStatsigClient();
-    const handleClick = () => client.logEvent("email_submit", "Contact");
-
     return (
         <div className={contact.container} id="contact">
             <h1 id="contact_header">Contact Us</h1>
@@ -151,7 +146,7 @@ const Contact = () => {
                         required>
                     </textarea>
                 </form>
-                <button id="submit" onClick={() => {setSubmit(true); handleClick()}}>Submit</button>
+                <button id="submit" onClick={() => { setSubmit(true) }}>Submit</button>
             </div>
 
 
